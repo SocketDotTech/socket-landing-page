@@ -1,9 +1,12 @@
 module.exports = {
-  content: [
-    "./src/**/*.{js, jsx, ts, tsx}",
-  ],
+  purge: ["./src/***/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js, ts, jsx, tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'oc-theme-primary': '#7F1FFF',
+        'oc-theme-primary-dark': '#5F00D2',
+      }
+    },
   },
   plugins: [],
 }

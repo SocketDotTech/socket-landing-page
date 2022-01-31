@@ -1,7 +1,11 @@
+import { Header } from "./components/Header";
+
 function App() {
   return (
-    <div className="bg-red-500">
-     salil
+    <div className="h-screen" 
+    style={{background: '#1E1A20'}}
+    >
+      <Header />
     </div>
   );
 }
