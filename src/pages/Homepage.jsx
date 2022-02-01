@@ -3,6 +3,7 @@ import socketIconWhite from "../assets/socket-icon-white.png";
 import routeImg from "../assets/route.svg";
 import { PartnersCarousel } from "../components/PartnersCarousel";
 import { Team } from "../components/Team";
+import { Footer } from "../components/Footer";
 const btnStyle =
   "bg-oc-theme-primary text-white hover:bg-oc-theme-primary-dark text-sm font-medium p-4 mr-4 rounded transition-all";
 
@@ -79,7 +80,7 @@ export const Homepage = () => {
           <div className="flex items-center justify-between">
             <div className="flex flex-col">
               <h2 className="text-white text-4xl font-bold">
-                <span className="text-gray-300">Try out</span> Fund Movr
+                <span className="text-gray-300">Try out</span> FundMovr
               </h2>
               <p className="text-gray-200 mt-7 max-w-2xl">
                 <b>Fund Movr moves assets between L2s in the most efficient way</b>. We
@@ -96,11 +97,7 @@ export const Homepage = () => {
         </div>
       </div>
 
-      {/* footer */}
-      <div className="bg-oc-theme-dark">
-          <div className="container border-t border-gray-200 border-opacity-50 py-10 mx-auto">
-          </div>
-      </div>
+     <Footer />
     </div>
   );
 };

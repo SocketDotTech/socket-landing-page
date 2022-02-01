@@ -14,7 +14,7 @@ export const Header = () => {
         </div>
       {/* </div> */}
 
-      <a href="https:://app.fund.movr.network" className="text-xs font-medium bg-oc-theme-primary hover:bg-oc-theme-primary-dark text-white rounded px-4 py-3 transition-all">Bridge on Fund Movr</a>
+      <a href="https:://app.fund.movr.network" className="text-xs font-medium bg-oc-theme-primary hover:bg-oc-theme-primary-dark text-white rounded px-4 py-3 transition-all">FundMovr App</a>
     </header>
   );
 };
