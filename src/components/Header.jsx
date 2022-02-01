@@ -3,7 +3,7 @@ const linkStyle = "text-gray-400 hover:text-white cursor-pointer mx-4 transition
 
 export const Header = () => {
   return (
-    <header className=" px-10 py-4 backdrop-blur flex justify-between items-center">
+    <header className="z-50 fixed w-screen top-0 left-0 px-10 py-4 backdrop-blur flex justify-between items-center bg-[#111111] bg-opacity-90">
       {/* <div className="container"> */}
         <img src={Logo} className="h-16" />
 
@@ -14,7 +14,7 @@ export const Header = () => {
         </div>
       {/* </div> */}
 
-      <a href="https:://app.fund.movr.network" className="text-sm font-medium bg-oc-theme-primary hover:bg-oc-theme-primary-dark text-white rounded-md px-4 py-2 transition-all">Bridge on Fund Movr</a>
+      <a href="https:://app.fund.movr.network" className="text-xs font-medium bg-oc-theme-primary hover:bg-oc-theme-primary-dark text-white rounded px-4 py-3 transition-all">Bridge on Fund Movr</a>
     </header>
   );
 };

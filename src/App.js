@@ -1,11 +1,11 @@
 import { Header } from "./components/Header";
+import { Homepage } from "./pages/Homepage";
 
 function App() {
   return (
-    <div className="h-screen" 
-    style={{background: '#1E1A20'}}
-    >
+    <div className="h-screen bg-oc-dark overflow-x-hidden">
       <Header />
+      <Homepage />
     </div>
   );
 }
