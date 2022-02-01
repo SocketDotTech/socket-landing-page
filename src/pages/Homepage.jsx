@@ -2,6 +2,7 @@ import patternLight from "../assets/pattern-light.svg";
 import socketIconWhite from "../assets/socket-icon-white.png";
 import routeImg from "../assets/route.svg";
 import { PartnersCarousel } from "../components/PartnersCarousel";
+import { Team } from "../components/Team";
 const btnStyle =
   "bg-oc-theme-primary text-white hover:bg-oc-theme-primary-dark text-sm font-medium p-4 mr-4 rounded transition-all";
 
@@ -15,7 +16,10 @@ export const Homepage = () => {
       >
         {/* dark overlay */}
         <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-oc-dark to-transparent">
-            <div className="absolute bottom-0 left-0 h-full w-full bg-no-repeat bg-bottom" style={{backgroundImage: `url(${routeImg})`}}></div>
+          <div
+            className="absolute bottom-0 left-0 h-full w-full bg-no-repeat bg-bottom"
+            style={{ backgroundImage: `url(${routeImg})` }}
+          ></div>
         </div>
         {/* circle */}
         {/* <div style={{width: '540px', height: '540px', right: '-280px', bottom: '-130px'}} className="absolute rounded-full bg-oc-theme-primary-dark flex justify-center items-center">
@@ -43,7 +47,10 @@ export const Homepage = () => {
       </div>
 
       {/* Funding section */}
-      <div className="bg-gradient-to-r from-oc-theme-primary to-oc-theme-primary-dark" style={{padding: '100px 0'}}>
+      <div
+        className="bg-gradient-to-r from-oc-theme-primary to-oc-theme-primary-dark"
+        style={{ padding: "100px 0" }}
+      >
         <div className="container mx-auto relative flex justify-between items-center">
           <div className="flex flex-col">
             <h2 className="text-white text-4xl font-bold">
@@ -60,8 +67,39 @@ export const Homepage = () => {
         </div>
 
         <div className="container pt-20 mx-auto">
-            <PartnersCarousel />
+          <PartnersCarousel />
         </div>
+      </div>
+
+      <Team />
+
+      {/* fund movr ad */}
+      <div className="bg-gradient-to-b from-oc-theme-primary to-oc-theme-dark">
+        <div className="container mx-auto py-20">
+          <div className="flex items-center justify-between">
+            <div className="flex flex-col">
+              <h2 className="text-white text-4xl font-bold">
+                <span className="text-gray-300">Try out</span> Fund Movr
+              </h2>
+              <p className="text-gray-200 mt-7 max-w-2xl">
+                <b>Fund Movr moves assets between L2s in the most efficient way</b>. We
+                aggregate all bridges under one roof and provide peer-to-peer
+                settlement on top of it. Think cow-swap for cross-L2 asset
+                movements
+              </p>
+            </div>
+            <div className="flex">
+                <a href="docs" className={`${btnStyle} bg-gray-200 text-gray-800 hover:bg-white`}>Go to app</a>
+                <a href="docs" className={`${btnStyle} bg-transparent border border-white hover:bg-white hover:text-gray-800`}>API Docs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* footer */}
+      <div className="bg-oc-theme-dark">
+          <div className="container border-t border-gray-200 border-opacity-50 py-10 mx-auto">
+          </div>
       </div>
     </div>
   );
