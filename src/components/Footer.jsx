@@ -33,7 +33,7 @@ export const Footer = () => {
               </a>
             </li>
             <li className={liStyle}>
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href="https://medium.com/movr-network" target="_blank" rel="noopener noreferrer">
                 Blog
               </a>
             </li>
@@ -57,7 +57,7 @@ export const Footer = () => {
             </li>
             <li className={liStyle}>
               <a
-                href="https://twitter.com/socket.tech"
+                href="https://twitter.com/socketdottech"
                 target="_blank"
                 rel="noopener noreferrer"
               >
