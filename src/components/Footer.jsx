@@ -14,32 +14,32 @@ export const Footer = () => {
           {/* links */}
           <ul className="flex flex-1 justify-center border-l border-r border-gray-400">
             <li className={liStyle}>
-              <a href="">Careers</a>
+              <a href="#">Careers</a>
             </li>
             <li className={liStyle}>
-              <a href="">Docs</a>
+              <a href="#">Docs</a>
             </li>
             <li className={liStyle}>
-              <a href="">Blog</a>
+              <a href="#">Blog</a>
             </li>
             <li className={liStyle}>
-              <a href="">Media Kit</a>
+              <a href="#">Media Kit</a>
             </li>
           </ul>
 
           {/* social */}
           <ul className="flex flex-1 justify-end">
             <li className={liStyle}>
-              <a href="">Discord</a>
+              <a href="#">Discord</a>
             </li>
             <li className={liStyle}>
-              <a href="">Twitter</a>
+              <a href="#">Twitter</a>
             </li>
             <li className={liStyle}>
-              <a href="">Telegram</a>
+              <a href="#">Telegram</a>
             </li>
             <li className={liStyle}>
-              <a href="">Linked</a>
+              <a href="#">Linked</a>
             </li>
           </ul>
         </div>
