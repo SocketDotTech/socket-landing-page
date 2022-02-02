@@ -1,5 +1,4 @@
 import patternLight from "../assets/pattern-light.svg";
-import socketIconWhite from "../assets/socket-icon-white.png";
 import routeImg from "../assets/hero-illustration.svg";
 import { PartnersCarousel } from "../components/PartnersCarousel";
 import { Team } from "../components/Team";
@@ -52,19 +51,14 @@ export const Homepage = () => {
         className="bg-gradient-to-r from-oc-theme-primary to-oc-theme-primary-dark"
         style={{ padding: "100px 0" }}
       >
-        <div className="container mx-auto relative flex justify-between items-center">
-          <div className="flex flex-col">
-            <h2 className="text-white text-4xl font-bold">
-              We work with the best!
-            </h2>
-            <p className="text-gray-300 mt-7 max-w-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-              officiis vel culpa, facere, consectetur, eum pariatur similique
-              quod adipisci perferendis minima placeat! Accusantium perspiciatis
-              qui quibusdam amet unde inventore porro.
-            </p>
-          </div>
-          <img src={socketIconWhite} className="w-40" />
+        <div className="container mx-auto relative">
+          <h2 className="text-white text-4xl font-bold text-center">
+            Powering interoperability for everyone!
+          </h2>
+          <p className="text-gray-300 mt-7 max-w-xl mx-auto text-center">
+            Socket Powers Seamless Multi Chain UX for Top Apps Across Chains"
+          </p>
+          {/* <img src={socketIconWhite} className="w-20" /> */}
         </div>
 
         <div className="container pt-20 mx-auto">
@@ -83,21 +77,28 @@ export const Homepage = () => {
                 <span className="text-gray-300">Try out</span> FundMovr
               </h2>
               <p className="text-gray-200 mt-7 max-w-2xl">
-                <b>Fund Movr moves assets between L2s in the most efficient way</b>. We
-                aggregate all bridges under one roof and provide peer-to-peer
-                settlement on top of it. Think cow-swap for cross-L2 asset
-                movements
+                <b>
+                  Fund Movr moves assets between L2s in the most efficient way
+                </b>
+                . We aggregate all bridges under one roof and provide
+                peer-to-peer settlement on top of it. Think cow-swap for
+                cross-L2 asset movements
               </p>
             </div>
             <div className="flex">
-                <a href="docs" className={`${btnStyle} bg-gray-200 text-gray-800 hover:bg-white`}>Go to app</a>
-                {/* <a href="docs" className={`${btnStyle} bg-transparent border border-white hover:bg-white hover:text-gray-800`}>API Docs</a> */}
+              <a
+                href="docs"
+                className={`${btnStyle} bg-gray-200 text-gray-800 hover:bg-white`}
+              >
+                Go to app
+              </a>
+              {/* <a href="docs" className={`${btnStyle} bg-transparent border border-white hover:bg-white hover:text-gray-800`}>API Docs</a> */}
             </div>
           </div>
         </div>
       </div>
 
-     <Footer />
+      <Footer />
     </div>
   );
 };

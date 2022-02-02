@@ -15,11 +15,11 @@ export const PartnersCarousel = () => {
     zerionLogo,
     tetuLogo,
     fantomLogo,
-    zapperLogo,
+    // zapperLogo,
     orangeLogo,
     ambireLogo,
-    fantomLogo,
-    zapperLogo,
+    // atlantis
+    // rubicon
   ];
   var settings = {
     dots: false,
