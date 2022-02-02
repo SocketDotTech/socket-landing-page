@@ -1,20 +1,61 @@
+import { useEffect, useLayoutEffect, useState } from "react";
 import Logo from "../assets/socket-white-logo.png";
-const linkStyle = "text-gray-400 hover:text-white cursor-pointer mx-4 transition-all";
+import { Menu } from "react-feather";
+const linkStyle =
+  "text-gray-400 hover:text-white cursor-pointer mx-4 transition-all";
+
+const mobileMenuStyle = "bg-[#111111] backdrop-blur top-16 w-2/3 h-screen flex-col absolute z-10 py-3";
+const mobileListStyle = "text-center bg-oc-dark p-2 rounded-sm my-1";
 
 export const Header = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useLayoutEffect(() => {
+    window.addEventListener("resize", () => {
+      updateScreenSize();
+    });
+  });
+
+  useEffect(() => {
+    updateScreenSize();
+  }, []);
+
+  const updateScreenSize = () => {
+    if (window.innerWidth >= 768) {
+      setIsMobile(false);
+    } else setIsMobile(true);
+  };
+
+  const toggleMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <header className="z-50 fixed w-screen top-0 left-0 px-10 py-4 backdrop-blur flex justify-between items-center bg-[#111111] bg-opacity-90">
-      {/* <div className="container"> */}
-        <img src={Logo} className="h-16" />
+    <header className="z-50 fixed w-screen top-0 left-0 px-5 md:px-10 py-2 md:py-4 backdrop-blur flex justify-between items-center bg-[#111111] bg-opacity-90">
+      <img src={Logo} className="h-12 md:h-16" />
 
-        <div className="flex flex-grow justify-center">
-            <a className={linkStyle} href="/about">Team</a>
-            <a className={linkStyle} href="/about">Careers</a>
-            <a className={linkStyle} href="/about">Docs</a>
-        </div>
-      {/* </div> */}
+      <div className={`${isMobile? mobileMenuStyle : 'justify-center'} ${isMobileMenuOpen ? 'right-0' : '-right-2/3'} trasnform transition-all flex flex-grow absolute md:static`}>
+        <a className={`${linkStyle} ${isMobile ? mobileListStyle : ''}`} href="/about">
+          Team
+        </a>
+        <a className={`${linkStyle} ${isMobile? mobileListStyle : ''}`} href="/about">
+          Careers
+        </a>
+        <a className={`${linkStyle} ${isMobile? mobileListStyle : ''}`} href="/about">
+          Docs
+        </a>
+      </div>
 
-      <a href="https:://app.fund.movr.network" className="text-xs font-medium bg-oc-theme-primary hover:bg-oc-theme-primary-dark text-white rounded px-4 py-3 transition-all">FundMovr App</a>
+<div className="flex items-center">
+<a
+        href="https:://app.fund.movr.network"
+        className="text-xs font-medium bg-oc-theme-primary hover:bg-oc-theme-primary-dark text-white rounded-sm md:rounded px-3 py-2 transition-all"
+      >
+        FundMovr App
+      </a>
+      {isMobile && <Menu className="text-white w-5 h-5 ml-4" onClick={toggleMenu}/>}
+</div>
     </header>
   );
 };

@@ -29,6 +29,15 @@ export const PartnersCarousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        }
+      }
+    ]      
   };
   return (
     <Slider {...settings}>
@@ -42,7 +51,7 @@ export const PartnersCarousel = () => {
 const Item = ({imgSrc}) => {
   return (
     <div className="flex items-center justify-center">
-      <img src={imgSrc} className="h-10" />
+      <img src={imgSrc} className="h-8 md:h-10" />
     </div>
   );
 };
