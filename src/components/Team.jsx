@@ -1,4 +1,5 @@
 import patternLight from "../assets/pattern-light.svg";
+import absolutePic from "../assets/absolutePic.jpeg";
 const teamList = [
   {
     name: "Vaibhav Chellani",
@@ -67,8 +68,7 @@ const teamList = [
     name: "Absolute",
     role: "Community",
     twitter: "AbsoluteUknit",
-    imgSrc:
-      "https://pbs.twimg.com/profile_images/1471594621730013188/hj_smNF2_400x400.jpg",
+    imgSrc: absolutePic,
   },
   {
     name: "Devain Pal Bansal",
