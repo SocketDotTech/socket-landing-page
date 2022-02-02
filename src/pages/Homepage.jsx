@@ -30,15 +30,17 @@ export const Homepage = () => {
         {/* content */}
         <div className="flex flex-col justify-center w-full h-full relative container mx-auto px-5">
           <h1 className="text-white text-4xl md:text-6xl font-bold max-w-xl">
-            Making cross chain UX seamless
+            Powering Truly Multi Chain Apps
           </h1>
           <div className="flex mt-10">
-            <a href="discord.com" className={btnStyle}>
+            <a href="https://docs.socket.tech" target="_blank" className={btnStyle}>
               Get started
             </a>
             <a
-              href="discord.com"
+              href="https://discord.com/invite/UFgG72rp42"
               className={`${btnStyle} bg-gray-100 text-gray-800 hover:text-white`}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Join the community
             </a>
@@ -47,15 +49,13 @@ export const Homepage = () => {
       </div>
 
       {/* Funding section */}
-      <div
-        className="bg-gradient-to-r from-oc-theme-primary to-oc-theme-primary-dark py-10 md:py-20"
-      >
+      <div className="bg-gradient-to-r from-oc-theme-primary to-oc-theme-primary-dark py-10 md:py-20">
         <div className="container mx-auto relative px-5">
           <h2 className="text-white text-2xl md:text-4xl font-bold text-center">
             Powering interoperability for everyone!
           </h2>
           <p className="text-gray-300 mt-4 md:mt-7 max-w-xl mx-auto text-center text-sm md:text-base">
-            Socket Powers Seamless Multi Chain UX for Top Apps Across Chains"
+            Top dapps in the ecosystem are already plugged in
           </p>
           {/* <img src={socketIconWhite} className="w-20" /> */}
         </div>
@@ -76,18 +76,18 @@ export const Homepage = () => {
                 <span className="text-gray-300">Try out</span> FundMovr
               </h2>
               <p className="text-gray-200 mt-4 md:mt-7 max-w-2xl text-sm md:text-base">
-                <b>
-                  Fund Movr moves assets between L2s in the most efficient way.
-                </b>
-                 We aggregate all bridges under one roof and provide
-                peer-to-peer settlement on top of it. Think cow-swap for
-                cross-L2 asset movements
+                FundMovr moves assets between chains in the most efficient by
+                plugging into the Socket Liquidity Meta-Layer. We allow users to
+                swap and transfer funds across any-chain seamlessly and via the
+                most efficient route.
               </p>
             </div>
             <div className="flex mt-4 md:mt-0">
               <a
-                href="docs"
+                href="https://app.fund.movr.network/"
                 className={`${btnStyle} bg-gray-200 text-gray-800 hover:bg-white`}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Go to app
               </a>

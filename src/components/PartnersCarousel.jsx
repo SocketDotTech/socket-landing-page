@@ -9,17 +9,19 @@ import fantomLogo from "../assets/partners/fantom-logo.svg";
 import zapperLogo from "../assets/partners/zapper-logo.svg";
 import orangeLogo from "../assets/partners/orange-logo.png";
 import ambireLogo from "../assets/partners/ambire-logo.png";
+import perpetualLogo from "../assets/partners/perpetual-logo.svg";
 
 export const PartnersCarousel = () => {
   const partners = [
     zerionLogo,
     tetuLogo,
-    fantomLogo,
+    perpetualLogo,
     // zapperLogo,
     orangeLogo,
     ambireLogo,
     // atlantis
     // rubicon
+    // 2 more
   ];
   var settings = {
     dots: false,

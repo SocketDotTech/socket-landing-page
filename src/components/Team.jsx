@@ -88,7 +88,7 @@ const teamList = [
 
 export const Team = () => {
   return (
-    <div className="relative overflow-hidden py-10 md:py-20">
+    <div className="relative overflow-hidden py-10 md:py-20" id="team">
       <div
         className="absolute h-full bg-[length:240px_240px] rotate-45"
         style={{
