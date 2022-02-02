@@ -1,5 +1,6 @@
 import patternLight from "../assets/pattern-light.svg";
-import absolutePic from "../assets/absolutePic.jpeg";
+import defiAlphaPic from "../assets/defiAlpha.jpeg";
+import sheepPic from "../assets/sheep.jpeg";
 const teamList = [
   {
     name: "Vaibhav Chellani",
@@ -68,7 +69,7 @@ const teamList = [
     name: "Absolute",
     role: "Community",
     twitter: "AbsoluteUknit",
-    imgSrc: absolutePic,
+    imgSrc: sheepPic,
   },
   {
     name: "Devain Pal Bansal",
@@ -81,8 +82,7 @@ const teamList = [
     name: "DefiAlpha",
     role: "Marketing",
     tiwtter: "IntrinsicDeFi",
-    imgSrc:
-      "https://pbs.twimg.com/profile_images/1470504588772007942/8rfa-Iab_400x400.jpg",
+    imgSrc: defiAlphaPic,
   },
 ];
 
