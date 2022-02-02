@@ -3,26 +3,27 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 // partners logos
-import socketLogo from "../assets/partners/socket-white-logo.png";
+import zerionLogo from "../assets/partners/zerion-logo.svg";
+import tetuLogo from "../assets/partners/tetu-logo.svg";
+import fantomLogo from "../assets/partners/fantom-logo.svg";
+import zapperLogo from "../assets/partners/zapper-logo.svg";
 
 export const PartnersCarousel = () => {
   const partners = [
-    socketLogo,
-    socketLogo,
-    socketLogo,
-    socketLogo,
-    socketLogo,
-    socketLogo,
-    socketLogo,
-    socketLogo,
-    socketLogo,
-    socketLogo,
+    zerionLogo,
+    tetuLogo,
+    fantomLogo,
+    zapperLogo,
+    zerionLogo,
+    tetuLogo,
+    fantomLogo,
+    zapperLogo,
   ];
   var settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
@@ -36,11 +37,10 @@ export const PartnersCarousel = () => {
   );
 };
 
-const Item = (imgSrc) => {
+const Item = ({imgSrc}) => {
   return (
     <div className="flex items-center justify-center">
-      <img src={socketLogo} className="h-16" />
-      {/* <img src={imgSrc} className="h-16" /> */}
+      <img src={imgSrc} className="h-10" />
     </div>
   );
 };

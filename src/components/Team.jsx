@@ -95,13 +95,15 @@ export const Team = () => {
           backgroundImage: `url(${patternLight})`,
           top: "590px",
           left: "610px",
-          width:'700px'
+          width: "700px",
         }}
       >
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-l from-transparent to-[#17171F]"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-l from-transparent to-[#17171F]"></div>
       </div>
       <div className="container mx-auto mb-14 relative">
-        <h2 className="text-white text-5xl font-bold text-center">Our team</h2>
+        <h2 className="text-white text-5xl font-bold text-center mb-4">
+          Our team
+        </h2>
         <p className="text-gray-300 text-center">
           super coders and cross chain enthusiasts
         </p>
@@ -118,7 +120,15 @@ export const Team = () => {
 const Person = ({ data }) => {
   return (
     <div className="mb-5 flex flex-col items-center p-5 rounded-md">
-      <p className="text-center font-medium text-white">{data.name} </p>
+      <p className="text-center font-medium text-white hover:underline">
+        <a
+          href={`https://twitter.com/${data.twitter}`}
+          target="_blank"
+          className="block relative"
+        >
+          {data.name}
+        </a>
+      </p>
       <p className="text-center text sm text-gray-400 lowercase">{data.role}</p>
       <img
         className="w-36 h-36 rounded-full mt-5 object-cover"

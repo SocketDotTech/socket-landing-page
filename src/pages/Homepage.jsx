@@ -91,7 +91,7 @@ export const Homepage = () => {
             </div>
             <div className="flex">
                 <a href="docs" className={`${btnStyle} bg-gray-200 text-gray-800 hover:bg-white`}>Go to app</a>
-                <a href="docs" className={`${btnStyle} bg-transparent border border-white hover:bg-white hover:text-gray-800`}>API Docs</a>
+                {/* <a href="docs" className={`${btnStyle} bg-transparent border border-white hover:bg-white hover:text-gray-800`}>API Docs</a> */}
             </div>
           </div>
         </div>
