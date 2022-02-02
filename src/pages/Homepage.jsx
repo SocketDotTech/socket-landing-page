@@ -1,6 +1,6 @@
 import patternLight from "../assets/pattern-light.svg";
 import socketIconWhite from "../assets/socket-icon-white.png";
-import routeImg from "../assets/route.svg";
+import routeImg from "../assets/hero-illustration.svg";
 import { PartnersCarousel } from "../components/PartnersCarousel";
 import { Team } from "../components/Team";
 import { Footer } from "../components/Footer";
@@ -18,7 +18,7 @@ export const Homepage = () => {
         {/* dark overlay */}
         <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-oc-dark to-transparent">
           <div
-            className="absolute bottom-0 left-0 h-full w-full bg-no-repeat bg-bottom"
+            className="absolute bottom-0 left-0 h-full w-full bg-no-repeat bg-bottom bg-cover"
             style={{ backgroundImage: `url(${routeImg})` }}
           ></div>
         </div>

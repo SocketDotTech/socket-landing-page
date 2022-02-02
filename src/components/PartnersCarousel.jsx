@@ -7,6 +7,8 @@ import zerionLogo from "../assets/partners/zerion-logo.svg";
 import tetuLogo from "../assets/partners/tetu-logo.svg";
 import fantomLogo from "../assets/partners/fantom-logo.svg";
 import zapperLogo from "../assets/partners/zapper-logo.svg";
+import orangeLogo from "../assets/partners/orange-logo.png";
+import ambireLogo from "../assets/partners/ambire-logo.png";
 
 export const PartnersCarousel = () => {
   const partners = [
@@ -14,8 +16,8 @@ export const PartnersCarousel = () => {
     tetuLogo,
     fantomLogo,
     zapperLogo,
-    zerionLogo,
-    tetuLogo,
+    orangeLogo,
+    ambireLogo,
     fantomLogo,
     zapperLogo,
   ];
