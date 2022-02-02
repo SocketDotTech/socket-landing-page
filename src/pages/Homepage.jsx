@@ -17,7 +17,7 @@ export const Homepage = () => {
         {/* dark overlay */}
         <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-oc-dark to-transparent">
           <div
-            className="absolute bottom-0 left-0 h-full w-full bg-no-repeat bg-bottom bg-cover"
+            className="absolute bottom-0 left-0 h-full w-full bg-no-repeat bg-bottom 2xl:bg-bottom-right bg-cover 2xl:bg-auto"
             style={{ backgroundImage: `url(${routeImg})` }}
           ></div>
         </div>
