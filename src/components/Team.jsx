@@ -1,6 +1,6 @@
 import patternLight from "../assets/pattern-light.svg";
-import defiAlphaPic from "../assets/defiAlpha.jpeg";
-import sheepPic from "../assets/sheep.jpeg";
+import defiAlphaPic from "../assets/defi-alpha.png";
+import sheepPic from "../assets/sheep.png";
 const teamList = [
   {
     name: "Vaibhav Chellani",
