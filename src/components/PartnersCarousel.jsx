@@ -16,7 +16,7 @@ export const PartnersCarousel = () => {
     zerionLogo,
     tetuLogo,
     perpetualLogo,
-    // zapperLogo,
+    zapperLogo,
     orangeLogo,
     ambireLogo,
     // atlantis

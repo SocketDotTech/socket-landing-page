@@ -1,6 +1,8 @@
 import patternLight from "../assets/pattern-light.svg";
-import defiAlphaPic from "../assets/defi-alpha.png";
-import sheepPic from "../assets/sheep.png";
+import defiAlphaPic from "../assets/team/defi-alpha.png";
+import sheepPic from "../assets/team/sheep.png";
+import salil from "../assets/team/salil.png";
+
 const teamList = [
   {
     name: "Vaibhav Chellani",
@@ -41,8 +43,7 @@ const teamList = [
     name: "Salil Naik",
     role: "Senior Frontend Developer",
     twitter: "__salil_naik__",
-    imgSrc:
-      "https://pbs.twimg.com/profile_images/1245749133224415233/dtqzcQTF_400x400.jpg",
+    imgSrc: salil,
   },
   {
     name: "Shrey Keny",
