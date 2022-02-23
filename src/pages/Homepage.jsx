@@ -37,12 +37,12 @@ export const Homepage = () => {
               Get started
             </a>
             <a
-              href="https://discord.com/invite/UFgG72rp42"
+              href="https://app.fund.movr.network/"
               className={`${btnStyle} bg-gray-100 text-gray-800 hover:text-white`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Join the community
+             Try it on <b>Fund Movr</b> 
             </a>
           </div>
         </div>
