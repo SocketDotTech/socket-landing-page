@@ -2,6 +2,7 @@ import patternLight from "../assets/pattern-light.svg";
 import salil from "../assets/team/salil.png";
 import dpb from "../assets/team/dpb.webp";
 import absolute from "../assets/team/absolute.webp";
+import rohit from "../assets/team/rohit.webp";
 
 const teamList = [
   {
@@ -56,8 +57,7 @@ const teamList = [
     name: "Rohit Chauhan",
     role: "Partnerships",
     twitter: "0xmadclown",
-    imgSrc:
-      "https://pbs.twimg.com/profile_images/1475143603462676481/J_Kl8GeV_400x400.png",
+    imgSrc: rohit,
   },
   {
     name: "Sriram Vasudevan",
