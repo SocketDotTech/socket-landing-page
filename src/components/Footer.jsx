@@ -48,7 +48,7 @@ export const Footer = () => {
           <ul className="flex flex-col md:flex-row flex-1 md:justify-end">
             <li className={liStyle}>
               <a
-                href="https://discord.com/invite/UFgG72rp42"
+                href="https://discord.gg/zfKJR8yWaH"
                 target="_blank"
                 rel="noopener noreferrer"
               >
