@@ -50,7 +50,7 @@ export const Header = () => {
         </a>
         <a
           className={`${linkStyle} ${isMobile ? mobileListStyle : ""}`}
-          href="https://movrnetwork.notion.site/We-should-work-together-5cc360ba8df94399948c573a21833804"
+          href="https://angel.co/company/socket-tech/jobs"
           target="_blank"
           rel="noopener noreferrer"
           onClick={toggleMenu}

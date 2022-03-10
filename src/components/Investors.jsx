@@ -1,7 +1,7 @@
 import framework from "../assets/investors/framework.svg";
 import nascent from "../assets/investors/nascent.svg";
 import geometry from "../assets/investors/geometry.svg";
-import coinbase from "../assets/investors/coinbase.svg";
+import coinbase from "../assets/investors/coinbase.png";
 import archetype from "../assets/investors/archetype.svg";
 import lightspeed from "../assets/investors/lightspeed.svg";
 import egirl from "../assets/investors/egirl.svg";
@@ -33,7 +33,7 @@ const investors = [
     img: coinbase,
     name: "Coinbase",
     url: "https://www.coinbase.com/",
-    height: "28px",
+    height: "36px",
   },
   {
     img: archetype,
@@ -82,29 +82,42 @@ const investors = [
 const angel = [
   {
     name: "Sandeep Nailwal",
-    role: "Founder",
+    role: "Co-Founder, Polygon",
     url: "https://twitter.com/sandeepnailwal",
   },
   {
-    name: "Sandeep Nailwal",
-    role: "Founder",
-    url: "https://twitter.com/sandeepnailwal",
+    name: "Jinglan Wan",
+    role: "Co-Founder & CEO, Optimism",
+    url: "https://twitter.com/jinglejamOP",
   },
   {
-    name: "Rishabh Khurana",
-    role: "Founder",
-    url: "https://twitter.com/sandeepnailwal",
+    name: "David Hoffman",
+    role: "Bankless",
+    url: "https://twitter.com/TrustlessState",
   },
   {
-    name: "Salil Naik",
-    role: "Founder",
-    url: "https://twitter.com/sandeepnailwal",
+    name: "Ryan Sean Adams",
+    role: "Bankless",
+    url: "https://twitter.com/RyanSAdams",
   },
   {
-    name: "Sandeep Nailwal",
-    role: "Founder",
-    url: "https://twitter.com/sandeepnailwal",
+    name: "0xMaki",
+    role: "Founder, SushiSwap",
+    url: "https://twitter.com/0xMaki",
   },
+  {
+    name: "Robert Miller",
+    role: "Flashbots",
+    url: "https://twitter.com/bertcmiller",
+  },
+  {
+    name: "Jaynti Kanani",
+    role: "Co-Founder, Polygon",
+    url: "https://twitter.com/_jdkanani",
+  },
+  {
+    name: "40+ kickass backers"
+  }
 ];
 
 export const Investors = () => {
@@ -113,7 +126,7 @@ export const Investors = () => {
       <h2 className="text-white text-2xl md:text-5xl font-bold text-center mb-4">
         Investors
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 py-10">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 pt-10 md:py-10">
         {investors.map((item, index) => {
           return (
             <div key={index} className="flex items-center justify-center mb-8 sm:mb-14 mx-auto">
@@ -134,7 +147,11 @@ export const Investors = () => {
         })}
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <h3 className="text-white text-2xl md:text-4xl font-medium text-center mb-4 pt-10">
+        Selected Angel Investors
+      </h3>
+
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 py-10">
         {angel.map((item, index) => {
             return (
           <a
