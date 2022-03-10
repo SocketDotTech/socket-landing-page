@@ -157,6 +157,7 @@ export const Investors = () => {
           <a
             href={item.url}
             target="_blank"
+            key={`angel-${index}`}
             className="opacity-80 hover:opacity-100 text-white flex flex-col justify-center items-center mb-8 sm:mb-14 scale-75 sm:scale-100"
           >
             <span className="text-2xl font-medium text-center">{item.name}</span>
