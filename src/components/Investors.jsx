@@ -102,7 +102,7 @@ const angel = [
   },
   {
     name: "0xMaki",
-    role: "Founder, SushiSwap",
+    role: "DeFi Legend",
     url: "https://twitter.com/0xMaki",
   },
   {
