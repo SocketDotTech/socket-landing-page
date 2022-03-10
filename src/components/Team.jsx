@@ -3,6 +3,7 @@ import salil from "../assets/team/salil.png";
 import dpb from "../assets/team/dpb.webp";
 import absolute from "../assets/team/absolute.webp";
 import rohit from "../assets/team/rohit.webp";
+import varun from "../assets/team/varun.webp";
 
 const teamList = [
   {
@@ -45,6 +46,12 @@ const teamList = [
     role: "Senior Frontend Developer",
     twitter: "__salil_naik__",
     imgSrc: salil,
+  },
+  {
+    name: "Varun",
+    role: "Product Manager",
+    twitter: null,
+    imgSrc: varun,
   },
   {
     name: "Shrey Keny",
@@ -115,15 +122,21 @@ const Person = ({ data }) => {
   return (
     <div className="mb-1 md:mb-5 flex flex-col items-center p-5 rounded-md">
       <p className="text-center font-medium text-white hover:underline text-sm md:text-base">
-        <a
-          href={`https://twitter.com/${data.twitter}`}
-          target="_blank"
-          className="block relative"
-        >
-          {data.name}
-        </a>
+        {data?.twitter ? (
+          <a
+            href={`https://twitter.com/${data.twitter}`}
+            target="_blank"
+            className="block relative"
+          >
+            {data.name}
+          </a>
+        ) : (
+          <span className="block relative">{data.name}</span>
+        )}
       </p>
-      <p className="text-center text-sm text-gray-400 capitalize">{data.role}</p>
+      <p className="text-center text-sm text-gray-400 capitalize">
+        {data.role}
+      </p>
       <img
         className="w-28 h-28 md:w-36 md:h-36 rounded-full mt-5 object-cover"
         src={data.imgSrc}

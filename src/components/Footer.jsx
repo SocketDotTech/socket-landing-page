@@ -16,7 +16,7 @@ export const Footer = () => {
           <ul className="flex flex-col md:flex-row flex-1 justify-center md:border-l md:border-r border-gray-400">
             <li className={liStyle}>
               <a
-                href="https://movrnetwork.notion.site/We-should-work-together-5cc360ba8df94399948c573a21833804"
+                href="https://angel.co/company/socket-tech/jobs"
                 target="_blank"
                 rel="noopener noreferrer"
               >

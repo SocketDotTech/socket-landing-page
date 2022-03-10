@@ -79,7 +79,7 @@ export const Homepage = () => {
                 <span className="text-gray-300">Try out</span> Bungee
               </h2>
               <p className="text-gray-200 mt-4 md:mt-7 max-w-2xl text-sm md:text-base">
-                Bungee moves assets between chains in the most efficient by
+                Bungee moves assets between chains in the most efficient way by
                 plugging into the Socket Liquidity Meta-Layer. We allow users to
                 swap and transfer funds across any-chain seamlessly and via the
                 most efficient route.
