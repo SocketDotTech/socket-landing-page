@@ -5,7 +5,7 @@ import coinbase from "../assets/investors/coinbase.png";
 import archetype from "../assets/investors/archetype.svg";
 import lightspeed from "../assets/investors/lightspeed.svg";
 import egirl from "../assets/investors/egirl.svg";
-import folius from "../assets/investors/folius.svg";
+import folius from "../assets/investors/folius-2.svg";
 import maven11 from "../assets/investors/maven11.svg";
 import frc from "../assets/investors/4rc.svg";
 import markCuban from "../assets/investors/mark-cuban.svg";
@@ -75,7 +75,7 @@ const investors = [
     img: markCuban,
     name: "Mark Cuban",
     url: "https://markcubancompanies.com/",
-    height: "30px",
+    height: "28 px",
   },
 ];
 
@@ -123,17 +123,17 @@ const angel = [
 export const Investors = () => {
   return (
     <div className="pt-10 md:pt-20 px-5 md:px-0 container mx-auto">
-      <h2 className="text-white text-2xl md:text-5xl font-bold text-center mb-4">
+      <h2 className="text-white text-2xl md:text-5xl font-bold text-center mb-10">
         Investors
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 pt-10 md:py-10">
-        {investors.map((item, index) => {
+      <div className="flex flex-wrap justify-center items-center md:py-12 bg-oc-theme-primary bg-opacity-90 rounded-lg">
+      {investors.map((item, index) => {
           return (
-            <div key={index} className="flex items-center justify-center mb-8 sm:mb-14 mx-auto">
+            <div key={index} className="w-1/2 sm:w-1/3 md:w-1/4 h-24 inline-flex items-center justify-center">
               <a
                 href={item.url}
                 target="_blank"
-                className="opacity-75 hover:opacity-100"
+                className="opacity-85 hover:opacity-100"
               >
                 <img
                   src={item.img}
@@ -145,19 +145,19 @@ export const Investors = () => {
             </div>
           );
         })}
-      </div>
+        </div>
 
-      <h3 className="text-white text-2xl md:text-4xl font-medium text-center mb-4 pt-10">
+      <h3 className="text-white text-xl md:text-4xl font-medium text-center mb-10 mt-20">
         Selected Angel Investors
       </h3>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 py-10">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 pt-14 bg-black bg-opacity-30 rounded-lg">
         {angel.map((item, index) => {
             return (
           <a
             href={item.url}
             target="_blank"
-            className="opacity-75 hover:opacity-100 text-white flex flex-col justify-center items-center mb-8 sm:mb-14 scale-75 sm:scale-100"
+            className="opacity-80 hover:opacity-100 text-white flex flex-col justify-center items-center mb-8 sm:mb-14 scale-75 sm:scale-100"
           >
             <span className="text-2xl font-medium text-center">{item.name}</span>
             <span className="text-sm text-gray-200 text-center">{item.role}</span>
