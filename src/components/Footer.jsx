@@ -1,52 +1,81 @@
 import logo from "../assets/socket-white-logo.png";
 import ocLove from "../assets/oc-love.svg";
+import socketAssets from "../assets/Socket_Assets.zip";
 const liStyle =
-  "text-gray-300 hover:text-white cursor-pointer transition-all mx-2";
+  "text-gray-300 hover:text-white cursor-pointer transition-all mx-2 text-sm md:text-base mb-1.5 md:mb-0";
 export const Footer = () => {
   return (
     <div className="bg-oc-theme-dark">
-      <div className="container border-b border-dashed border-gray-600 border-opacity-50 pt-16 pb-5 mx-auto">
-        <div className="flex justify-between items-center">
-          <div className="flex flex-1">
-          <img src={logo} alt="socket logo" className="h-20" />
+      <div className="container border-b border-dashed border-gray-600 border-opacity-50 pt-16 pb-5 px-5 mx-auto">
+        <div className="flex justify-evenly md:justify-between md:items-center">
+          <div className="flex flex-1 mr-3 md:mr-0">
+            <img src={logo} alt="socket logo" className="h-12 md:h-16" />
           </div>
 
           {/* links */}
-          <ul className="flex flex-1 justify-center border-l border-r border-gray-400">
+          <ul className="flex flex-col md:flex-row flex-1 justify-center md:border-l md:border-r border-gray-400">
             <li className={liStyle}>
-              <a href="">Careers</a>
+              <a
+                href="https://angel.co/company/socket-tech/jobs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Careers
+              </a>
             </li>
             <li className={liStyle}>
-              <a href="">Docs</a>
+              <a
+                href="https://docs.socket.tech"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Docs
+              </a>
             </li>
             <li className={liStyle}>
-              <a href="">Blog</a>
+              <a href="https://medium.com/socketdottech" target="_blank" rel="noopener noreferrer">
+                Blog
+              </a>
             </li>
             <li className={liStyle}>
-              <a href="">Media Kit</a>
+              <a href={socketAssets} download>
+                Media Kit
+              </a>
             </li>
           </ul>
 
           {/* social */}
-          <ul className="flex flex-1 justify-end">
+          <ul className="flex flex-col md:flex-row flex-1 md:justify-end">
             <li className={liStyle}>
-              <a href="">Discord</a>
+              <a
+                href="https://discord.gg/zfKJR8yWaH"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Discord
+              </a>
             </li>
             <li className={liStyle}>
-              <a href="">Twitter</a>
-            </li>
-            <li className={liStyle}>
-              <a href="">Telegram</a>
-            </li>
-            <li className={liStyle}>
-              <a href="">Linked</a>
+              <a
+                href="https://twitter.com/socketdottech"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
             </li>
           </ul>
         </div>
       </div>
-      <div className="container py-10 mx-auto flex justify-between items-center">
-        <p className="text-gray-400">All rights reserved</p>
-        <p className="text-gray-300 flex items-center">Made with <img src={ocLove} className="h-5 w-5 mx-1.5 border border-gray-300"/> by the OCs</p>
+      <div className="container px-5 py-5 md:py-10 mx-auto flex flex-col md:flex-row justify-between items-center">
+        <p className="text-gray-400 text-sm md:text-base mb-2 md:mb-0">
+          All rights reserved
+        </p>
+        <p className="text-gray-300 flex items-center text-sm md:text-base">
+          Made with{" "}
+          <img src={ocLove} className="h-5 w-5 mx-1.5 border border-gray-300" />{" "}
+          by the OCs
+        </p>
       </div>
     </div>
   );
