@@ -1,9 +1,9 @@
 import patternLight from "../assets/pattern-light.svg";
 import salil from "../assets/team/salil.png";
-import dpb from "../assets/team/dpb.webp";
-import absolute from "../assets/team/absolute.webp";
-import rohit from "../assets/team/rohit.webp";
-import varun from "../assets/team/varun.webp";
+import dpb from "../assets/team/dpb.png";
+import absolute from "../assets/team/absolute.jpg";
+import rohit from "../assets/team/rohit.jpeg";
+import varun from "../assets/team/varun.jpg";
 
 const teamList = [
   {
@@ -44,7 +44,7 @@ const teamList = [
   {
     name: "Salil Naik",
     role: "Senior Frontend Developer",
-    twitter: "__salil_naik__",
+    twitter: "0xSalilNaik",
     imgSrc: salil,
   },
   {
