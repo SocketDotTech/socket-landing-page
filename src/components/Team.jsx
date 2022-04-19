@@ -2,7 +2,7 @@ import patternLight from "../assets/pattern-light.svg";
 import salil from "../assets/team/salil.png";
 import dpb from "../assets/team/dpb.png";
 import absolute from "../assets/team/absolute.jpg";
-import rohit from "../assets/team/rohit.jpeg";
+import rohit from "../assets/team/rohit.jpg";
 import varun from "../assets/team/varun.jpg";
 
 const teamList = [
