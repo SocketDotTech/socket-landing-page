@@ -10,6 +10,9 @@ import orangeLogo from "../assets/partners/orange-logo.png";
 import ambireLogo from "../assets/partners/ambire-logo.png";
 import perpetualLogo from "../assets/partners/perpetual-logo.svg";
 import rubiconLogo from "../assets/partners/rubicon-logo.svg";
+import plasmaFinanceLogo from "../assets/partners/plasma-finance.svg";
+import brahmaLogo from "../assets/partners/brahma-logo.svg";
+import sequenceLogo from "../assets/partners/sequence-logo.svg";
 
 export const PartnersCarousel = () => {
   const partners = [
@@ -40,6 +43,18 @@ export const PartnersCarousel = () => {
     {
       imgSrc: rubiconLogo,
       height: "38px",
+    },
+    {
+      imgSrc: plasmaFinanceLogo,
+      height: "38px"
+    },
+    {
+      imgSrc: brahmaLogo,
+      height: "40px"
+    },
+    {
+      imgSrc: sequenceLogo,
+      height: "66px"
     }
   ];
   var settings = {
