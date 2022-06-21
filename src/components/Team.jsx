@@ -2,44 +2,45 @@ import patternLight from "../assets/pattern-light.svg";
 import salil from "../assets/team/salil.png";
 import dpb from "../assets/team/dpb.png";
 import absolute from "../assets/team/absolute.jpg";
-import rohit from "../assets/team/rohit.jpg";
 import varun from "../assets/team/varun.jpg";
+import vc from "../assets/team/vc.jpg";
+import rk from "../assets/team/rk.jpg";
+import arth from "../assets/team/arth.jpg";
+import vamsi from "../assets/team/vamsi.jpg";
+import shrey from "../assets/team/shrey.jpg";
+import sriram from "../assets/team/sriram.jpg";
+import aniket from "../assets/team/aniket.jpg";
 
 const teamList = [
   {
     name: "Vaibhav Chellani",
     role: "Co-founder",
     twitter: "vaibhavchellani",
-    imgSrc:
-      "https://pbs.twimg.com/profile_images/1358689766842093574/fzRjgWpP_400x400.jpg",
+    imgSrc: vc,
   },
   {
     name: "Rishabh Khurana",
     role: "Co-founder",
     twitter: "khuranarishabh0",
-    imgSrc:
-      "https://pbs.twimg.com/profile_images/1445800948572442630/nBBfCp8Y_400x400.jpg",
+    imgSrc: rk,
   },
   {
     name: "Arth Patel",
     role: "Head of Engineering",
     twitter: "arthcp",
-    imgSrc:
-      "https://pbs.twimg.com/profile_images/1464774690916814852/cTnVLnZ3_400x400.jpg",
+    imgSrc: arth,
   },
   {
     name: "Vamsi Reddy",
     role: "Senior Blockchain Developer",
     twitter: "reddyismav",
-    imgSrc:
-      "https://pbs.twimg.com/profile_images/1450133485763530753/sNbx_Ebp_400x400.jpg",
+    imgSrc: vamsi,
   },
   {
     name: "Aniket Sharma",
     role: "Blockchain Developer",
     twitter: "aniket965as",
-    imgSrc:
-      "https://pbs.twimg.com/profile_images/1383268944014766090/76TPY68v_400x400.jpg",
+    imgSrc: aniket,
   },
   {
     name: "Salil Naik",
@@ -57,21 +58,13 @@ const teamList = [
     name: "Shrey Keny",
     role: "Engineer, Dev-Rel, Documaster",
     twitter: "ShreyKeny",
-    imgSrc:
-      "https://pbs.twimg.com/profile_images/1479528377828593664/-wpeod-S_400x400.jpg",
-  },
-  {
-    name: "Rohit Chauhan",
-    role: "Partnerships",
-    twitter: "0xmadclown",
-    imgSrc: rohit,
+    imgSrc: shrey,
   },
   {
     name: "Sriram Vasudevan",
     role: "Marketing & Community",
     twitter: "sriramvas",
-    imgSrc:
-      "https://pbs.twimg.com/profile_images/1261151854395678721/SJBCg0Ol_400x400.jpg",
+    imgSrc: sriram,
   },
   {
     name: "Absolute",
