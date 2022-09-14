@@ -1,6 +1,6 @@
 export const Stats = () => {
   return (
-    <div className="pt-[4.5rem] bg-white">
+    <div className="pt-[4.5rem] pb-[3.875rem] pb- bg-white">
       <div className="container mx-auto">
         <h2 className="heading-2 text-center">
           Trusted by the Best{" "}

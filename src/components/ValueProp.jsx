@@ -29,7 +29,7 @@ export const ValueProp = () => {
                 <h2 className="heading-2 text-center">Designed by developers, for developers</h2>
                 <p className="supporting-text text-center mt-2">We obsess over every small design detail so you have a seamless developer experience while taking your dapps cross chain</p>
                 <div className="flex gap-8 mt-14 px-14">
-                    {valuePropData.map(item => <ValuePropCard title={item.title} desc={item.desc} url={item.url}/>)}
+                    {valuePropData.map(item => <ValuePropCard title={item.title} desc={item.desc} url={item.url} key={item.title}/>)}
                 </div>
             </div>
         </div>

@@ -101,7 +101,7 @@ export const Partners = () => {
         </p>
         <div className="flex flex-wrap gap-[13px] mt-10 justify-center">
           {partners.map((item) => (
-            <IconTab name={item.name} icon={item.icon} />
+            <IconTab name={item.name} icon={item.icon} key={item.name}/>
           ))}
         </div>
       </div>
