@@ -6,6 +6,11 @@ module.exports = {
         'oc-theme-primary': '#7F1FFF',
         'oc-theme-primary-dark': '#5F00D2',
         'oc-dark': '#17171F',
+        'socket-gray': {
+          70: '#475467',
+          80: '#344054',
+          90: '#1D2939',
+        },
       },
     },
   },

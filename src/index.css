@@ -5,3 +5,64 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Fonts */
+@font-face {
+  font-family: "Athletics";
+  src: url(./assets/fonts/Athletics-Light.woff2);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athletics";
+  src: url(./assets/fonts/Athletics-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athletics";
+  src: url(./assets/fonts/Athletics-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athletics";
+  src: url(./assets/fonts/Athletics-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athletics";
+  src: url(./assets/fonts/Athletics-ExtraBold.woff2);
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athletics";
+  src: url(./assets/fonts/Athletics-Black.woff2);
+  font-weight: 900;
+  font-style: normal;
+}
+
+@layer base {
+  html {
+    font-family: "Athletics", system-ui, sans-serif;
+  }
+
+  .heading-2 {
+    @apply text-5xl font-extrabold text-socket-gray-90
+  }
+
+  .supporting-text{
+    @apply text-[1.125rem] text-socket-gray-70 font-medium;
+  }
+
+  .overlay-bg {
+    @apply bg-zinc-50;
+  }
+}

@@ -5,6 +5,7 @@ import { PartnersCarousel } from "../components/PartnersCarousel";
 import { Team } from "../components/Team";
 import { Investors } from "../components/Investors";
 import { Footer } from "../components/Footer";
+import { Partners } from "../components/Partners";
 const btnStyle =
   "bg-oc-theme-primary text-white hover:bg-oc-theme-primary-dark text-sm font-medium px-3 h-14 flex items-center md:px-4 mr-4 rounded transition-all";
 
@@ -49,6 +50,8 @@ export const Homepage = () => {
           </div>
         </div>
       </div>
+
+      <Partners />
 
       {/* Funding section */}
       <div className="bg-gradient-to-r from-oc-theme-primary to-oc-theme-primary-dark py-10 md:py-20">
