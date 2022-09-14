@@ -7,6 +7,7 @@ import { Investors } from "../components/Investors";
 import { Footer } from "../components/Footer";
 import { Partners } from "../components/Partners";
 import { ValueProp } from "../components/ValueProp";
+import { Stats } from "../components/Stats";
 const btnStyle =
   "bg-oc-theme-primary text-white hover:bg-oc-theme-primary-dark text-sm font-medium px-3 h-14 flex items-center md:px-4 mr-4 rounded transition-all";
 
@@ -54,6 +55,7 @@ export const Homepage = () => {
 
       <Partners />
       <ValueProp />
+      <Stats />
      
 
       <Investors />
