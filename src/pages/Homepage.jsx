@@ -6,6 +6,7 @@ import { Team } from "../components/Team";
 import { Investors } from "../components/Investors";
 import { Footer } from "../components/Footer";
 import { Partners } from "../components/Partners";
+import { ValueProp } from "../components/ValueProp";
 const btnStyle =
   "bg-oc-theme-primary text-white hover:bg-oc-theme-primary-dark text-sm font-medium px-3 h-14 flex items-center md:px-4 mr-4 rounded transition-all";
 
@@ -52,23 +53,8 @@ export const Homepage = () => {
       </div>
 
       <Partners />
-
-      {/* Funding section */}
-      <div className="bg-gradient-to-r from-oc-theme-primary to-oc-theme-primary-dark py-10 md:py-20">
-        <div className="container mx-auto relative px-5">
-          <h2 className="text-white text-2xl md:text-4xl font-bold text-center">
-            Powering interoperability for everyone!
-          </h2>
-          <p className="text-gray-300 mt-4 md:mt-7 max-w-xl mx-auto text-center text-sm md:text-base">
-            Top dapps in the ecosystem are already plugged in
-          </p>
-          {/* <img src={socketIconWhite} className="w-20" /> */}
-        </div>
-
-        <div className="container pt-16 md:pt-20 mx-auto">
-          <PartnersCarousel />
-        </div>
-      </div>
+      <ValueProp />
+     
 
       <Investors />
       <Team />
