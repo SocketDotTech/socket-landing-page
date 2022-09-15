@@ -85,7 +85,7 @@ export const Footer = () => {
           <div className="flex-1">
             <NavTitle>Resources</NavTitle>
             <div className="flex flex-col gap-2">
-              {navItmes.product.map((item) => (
+              {navItmes.resources.map((item) => (
                 <NavItem label={item.title} url={item.url} />
               ))}
             </div>
@@ -93,7 +93,7 @@ export const Footer = () => {
           <div className="flex-1">
             <NavTitle>Company</NavTitle>
             <div className="flex flex-col gap-2">
-              {navItmes.product.map((item) => (
+              {navItmes.company.map((item) => (
                 <NavItem label={item.title} url={item.url} />
               ))}
             </div>

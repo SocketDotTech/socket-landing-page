@@ -1,8 +1,9 @@
 import { useEffect, useLayoutEffect, useState } from "react";
 import Logo from "../assets/socket-white-logo.png";
 import { Menu } from "react-feather";
+import { Button } from "./Button";
 const linkStyle =
-  "text-gray-400 hover:text-white cursor-pointer mx-4 transition-all";
+  "text-white hover:text-white/80 cursor-pointer transition-all text-lg font-bold";
 
 const mobileMenuStyle =
   "bg-[#111111] backdrop-blur top-16 w-2/3 h-screen flex-col absolute z-10 py-3";
@@ -33,20 +34,17 @@ export const Header = () => {
   };
 
   return (
-    <header className="z-50 fixed w-screen top-0 left-0 px-5 md:px-10 py-2 md:py-4 backdrop-blur flex justify-between items-center bg-[#111111] bg-opacity-90">
-      <img src={Logo} className="h-12 md:h-16" />
+    <header className="border-b border-[#8633F2] z-50 fixed w-screen top-0 left-0 px-5 md:px-10 py-2 md:py-3 backdrop-blur flex justify-between items-center bg-socket-theme bg-opacity-95">
+      <div className="flex-1">
+        <img src={Logo} className="h-12 md:h-16" />
+      </div>
 
-      <div
-        className={`${isMobile ? mobileMenuStyle : "justify-end"} ${
-          isMobileMenuOpen ? "right-0" : "-right-2/3"
-        } trasnform transition-all flex flex-grow absolute md:static`}
-      >
+      <div className="flex items-center justify-center gap-[48px] flex-1">
         <a
           className={`${linkStyle} ${isMobile ? mobileListStyle : ""}`}
-          href="#team"
-          onClick={toggleMenu}
+          href="/"
         >
-          Team
+          Home
         </a>
         <a
           className={`${linkStyle} ${isMobile ? mobileListStyle : ""}`}
@@ -66,11 +64,31 @@ export const Header = () => {
         >
           Docs
         </a>
+        <a
+          className={`${linkStyle} ${isMobile ? mobileListStyle : ""}`}
+          href="https://docs.socket.tech"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={toggleMenu}
+        >
+          Team
+        </a>
+      </div>
+
+      <div className="flex-1 flex justify-end items-center">
+        <Button
+          type="link"
+          url="https://bungee.exchange/"
+          bgColor="bg-socket-gray-100"
+          textColor="text-white"
+        >
+          Try Bungee App
+        </Button>
       </div>
 
       {isMobile && (
-          <Menu className="text-white w-5 h-5 ml-4" onClick={toggleMenu} />
-        )}
+        <Menu className="text-white w-5 h-5 ml-4" onClick={toggleMenu} />
+      )}
     </header>
   );
 };

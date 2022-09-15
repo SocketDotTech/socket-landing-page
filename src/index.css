@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Fonts */
@@ -55,10 +56,10 @@ html {
   }
 
   .heading-2 {
-    @apply text-5xl font-extrabold text-socket-gray-90;
+    @apply text-5xl font-extrabold text-socket-gray-90 leading-[57.6px];
   }
 
-  .supporting-text{
+  .supporting-text {
     @apply text-[1.125rem] text-socket-gray-70 font-medium;
   }
 
