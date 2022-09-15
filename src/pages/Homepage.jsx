@@ -9,6 +9,8 @@ import { Partners } from "../components/Partners";
 import { ValueProp } from "../components/ValueProp";
 import { Stats } from "../components/Stats";
 import { SocialSection } from "../components/SocialSection";
+import { Bungee } from "../components/Bungee";
+import { PreFooter } from "../components/PreFooter";
 const btnStyle =
   "bg-oc-theme-primary text-white hover:bg-oc-theme-primary-dark text-sm font-medium px-3 h-14 flex items-center md:px-4 mr-4 rounded transition-all";
 
@@ -39,7 +41,11 @@ export const Homepage = () => {
             Powering Truly Multi Chain Apps
           </h1>
           <div className="flex mt-10">
-            <a href="https://docs.socket.tech" target="_blank" className={`${btnStyle} bg-gray-100 text-gray-800 hover:text-white`}>
+            <a
+              href="https://docs.socket.tech"
+              target="_blank"
+              className={`${btnStyle} bg-gray-100 text-gray-800 hover:text-white`}
+            >
               Get started
             </a>
             <a
@@ -48,7 +54,7 @@ export const Homepage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-             Try it on <img src={bungeeLogo} className="h-8 ml-2 mt-3.5" />
+              Try it on <img src={bungeeLogo} className="h-8 ml-2 mt-3.5" />
             </a>
           </div>
         </div>
@@ -57,38 +63,11 @@ export const Homepage = () => {
       <Partners />
       <ValueProp />
       <Stats />
-     <Investors />
-     <SocialSection />
+      <Investors />
+      <SocialSection />
+      <Bungee />
+      <PreFooter />
 
-      {/* fund movr ad */}
-      <div className="bg-gradient-to-b from-oc-theme-primary to-oc-theme-dark">
-        <div className="container mx-auto py-10 md:py-20 px-5">
-          <div className="md:flex items-center justify-between">
-            <div className="flex flex-col">
-              <h2 className="text-white text-2xl md:text-4xl font-bold">
-                <span className="text-gray-300">Try out</span> Bungee
-              </h2>
-              <p className="text-gray-200 mt-4 md:mt-7 max-w-2xl text-sm md:text-base">
-                Bungee moves assets between chains in the most efficient way by
-                plugging into the Socket Liquidity Meta-Layer. We allow users to
-                swap and transfer funds across any-chain seamlessly and via the
-                most efficient route.
-              </p>
-            </div>
-            <div className="flex mt-4 md:mt-0">
-              <a
-                href="https://app.bungee.exchange/"
-                className={`${btnStyle} bg-gray-200 text-gray-800 hover:bg-white`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Go to app
-              </a>
-              {/* <a href="docs" className={`${btnStyle} bg-transparent border border-white hover:bg-white hover:text-gray-800`}>API Docs</a> */}
-            </div>
-          </div>
-        </div>
-      </div>
 
       <Footer />
     </div>

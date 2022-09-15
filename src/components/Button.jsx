@@ -1,7 +1,7 @@
-export const Button = ({ children, onClick }) => {
+export const Button = ({ children, onClick, variation }) => {
   return (
     <button
-      className="bg-socket-theme text-white px-12 py-3 rounded-[4px]"
+      className={`${variation === "black"? "bg-black" : "bg-socket-theme"} text-white px-12 py-3 rounded-[4px]`}
       onClick={onClick}
     >
       {children}

@@ -7,6 +7,7 @@ module.exports = {
         'oc-theme-primary-dark': '#5F00D2',
         'oc-dark': '#17171F',
         'socket-theme': "#7F1FFF",
+        'socket-theme-light': "#F7F1FE",
         'socket-gray': {
           40: '#D0D5DD',
           70: '#475467',
