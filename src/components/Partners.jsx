@@ -1,92 +1,165 @@
-import perpetualIcon from "../assets/partners/icons/perpetual.svg";
+import { useState } from "react";
+
+// gray icons
+import perpetualIcon from "../assets/partners/gray/perpetual.svg";
+import synthetixIcon from "../assets/partners/gray/Synthetix.svg";
+import premiaIcon from "../assets/partners/gray/Premia.svg";
+import dHedgeIcon from "../assets/partners/gray/dHedge.svg";
+import rubiconIcon from "../assets/partners/gray/Rubicon.svg";
+import polynomialIcon from "../assets/partners/gray/Polynomial.svg";
+import brahmaIcon from "../assets/partners/gray/brahma.svg";
+import TetuIcon from "../assets/partners/gray/Tetu.svg";
+import OnDefyIcon from "../assets/partners/gray/OnDefy.svg";
+import atlantisIcon from "../assets/partners/gray/atlantis.svg";
+import sequenceIcon from "../assets/partners/gray/Sequence.svg";
+import steakIcon from "../assets/partners/gray/steak.svg";
+import ZapperIcon from "../assets/partners/gray/Zapper.svg";
+import ZerionIcon from "../assets/partners/gray/Zerion.svg";
+import OneKeyIcon from "../assets/partners/gray/OneKey.svg";
+import imTokenIcon from "../assets/partners/gray/imToken.svg";
+import choiceIcon from "../assets/partners/gray/choise.svg";
+import viaIcon from "../assets/partners/gray/via.svg";
+import EtherspotIcon from "../assets/partners/gray/etherspot.svg";
+import PlasmaIcon from "../assets/partners/gray/plasma.svg";
+import orangeIcon from "../assets/partners/gray/orange.svg";
+import ambireIcon from "../assets/partners/gray/ambire.svg";
+
+// colored icons
+import perpetualIconFilled from "../assets/partners/colored/perpetual.svg";
+import synthetixIconFilled from "../assets/partners/colored/Synthetix.svg";
+import premiaIconFilled from "../assets/partners/colored/Premia.svg";
+import dHedgeIconFilled from "../assets/partners/colored/dHedge.svg";
+import rubiconIconFilled from "../assets/partners/colored/Rubicon.svg";
+import polynomialIconFilled from "../assets/partners/colored/Polynomial.svg";
+import brahmaIconFilled from "../assets/partners/colored/brahma.svg";
+import TetuIconFilled from "../assets/partners/colored/Tetu.svg";
+import OnDefyIconFilled from "../assets/partners/colored/OnDefy.svg";
+import atlantisIconFilled from "../assets/partners/colored/atlantis.svg";
+import sequenceIconFilled from "../assets/partners/colored/Sequence.svg";
+import steakIconFilled from "../assets/partners/colored/steak.svg";
+import ZapperIconFilled from "../assets/partners/colored/Zapper.svg";
+import ZerionIconFilled from "../assets/partners/colored/Zerion.svg";
+import OneKeyIconFilled from "../assets/partners/colored/OneKey.svg";
+import imTokenIconFilled from "../assets/partners/colored/imToken.svg";
+import choiceIconFilled from "../assets/partners/colored/choise.svg";
+import viaIconFilled from "../assets/partners/colored/via.svg";
+import EtherspotIconFilled from "../assets/partners/colored/etherspot.svg";
+import PlasmaIconFilled from "../assets/partners/colored/plasma.svg";
+import orangeIconFilled from "../assets/partners/colored/orange.svg";
+import ambireIconFilled from "../assets/partners/colored/ambire.svg";
+
+
+
 const partners = [
   {
     name: "Perpetual Protocol",
     icon: perpetualIcon,
+    iconFilled: perpetualIconFilled
   },
   {
     name: "Synthetix",
-    icon: perpetualIcon,
+    icon: synthetixIcon,
+    iconFilled: synthetixIconFilled
   },
   {
     name: "Premia",
-    icon: perpetualIcon,
+    icon: premiaIcon,
+    iconFilled: premiaIconFilled
   },
   {
     name: "dHedge",
-    icon: perpetualIcon,
+    icon: dHedgeIcon,
+    iconFilled: dHedgeIconFilled
   },
   {
     name: "Rubicon",
-    icon: perpetualIcon,
+    icon: rubiconIcon,
+    iconFilled: rubiconIconFilled 
   },
   {
     name: "Polynomial",
-    icon: perpetualIcon,
+    icon: polynomialIcon,
+    iconFilled: polynomialIconFilled
   },
   {
     name: "Brahma.fi",
-    icon: perpetualIcon,
+    icon: brahmaIcon,
+    iconFilled: brahmaIconFilled,
   },
   {
     name: "Tetu",
-    icon: perpetualIcon,
+    icon: TetuIcon,
+    iconFilled: TetuIconFilled,
   },
   {
     name: "OnDefy",
-    icon: perpetualIcon,
+    icon: OnDefyIcon,
+    iconFilled: OnDefyIconFilled
   },
   {
     name: "Atlantis Loan",
-    icon: perpetualIcon,
+    icon: atlantisIcon,
+    iconFilled: atlantisIconFilled
   },
   {
     name: "Sequence",
-    icon: perpetualIcon,
+    icon: sequenceIcon,
+    iconFilled: sequenceIconFilled
   },
   {
     name: "Steakwallet",
-    icon: perpetualIcon,
+    icon: steakIcon,
+    iconFilled: steakIconFilled
   },
   {
     name: "Zapper",
-    icon: perpetualIcon,
+    icon: ZapperIcon,
+    iconFilled: ZapperIconFilled
   },
   {
     name: "Zerion",
-    icon: perpetualIcon,
+    icon: ZerionIcon,
+    iconFilled: ZerionIconFilled
   },
   {
     name: "OneKey",
-    icon: perpetualIcon,
+    icon: OneKeyIcon,
+    iconFilled: OneKeyIconFilled
   },
   {
     name: "imToken",
-    icon: perpetualIcon,
+    icon: imTokenIcon,
+    iconFilled: imTokenIconFilled
   },
   {
     name: "Choice",
-    icon: perpetualIcon,
+    icon: choiceIcon,
+    iconFilled: choiceIconFilled
   },
   {
     name: "Via Exchange",
-    icon: perpetualIcon,
+    icon: viaIcon,
+    iconFilled: viaIconFilled
   },
   {
     name: "Etherspot",
-    icon: perpetualIcon,
+    icon: EtherspotIcon,
+    iconFilled: EtherspotIconFilled
   },
   {
     name: "Plasma Finance",
-    icon: perpetualIcon,
+    icon: PlasmaIcon,
+    iconFilled: PlasmaIconFilled
   },
   {
     name: "Orange Wallet",
-    icon: perpetualIcon,
+    icon: orangeIcon,
+    iconFilled: orangeIconFilled
   },
   {
     name: "Ambire Wallet",
-    icon: perpetualIcon,
+    icon: ambireIcon,
+    iconFilled: ambireIconFilled
   },
 ];
 
@@ -101,7 +174,7 @@ export const Partners = () => {
         </p>
         <div className="flex flex-wrap gap-[13px] mt-10 justify-center">
           {partners.map((item) => (
-            <IconTab name={item.name} icon={item.icon} key={item.name}/>
+            <IconFilledTab name={item.name} icon={item.icon} key={item.name} iconFilled={item.iconFilled}/>
           ))}
         </div>
       </div>
@@ -109,11 +182,16 @@ export const Partners = () => {
   );
 };
 
-const IconTab = ({ name, icon }) => {
+const IconFilledTab = ({ name, icon, iconFilled }) => {
+  const [hover, setHover] = useState(false);
   return (
-    <div className="py-1.5 px-[1.125rem] bg-white flex gap-3 items-center">
+    <div
+      className="py-1.5 px-[1.125rem] bg-white flex gap-3 items-center"
+      onMouseOver={() => setHover(true)}
+      onMouseOut={() => setHover(false)}
+    >
       <div className="border border-black/[0.02] rounded-[6.5px] h-[2.375rem] w-[2.375rem] flex items-center justify-center">
-        <img src={icon} />
+        <img src={hover ? iconFilled : icon} />
       </div>
       <p className="text-socket-gray-80 font-extrabold">{name}</p>
     </div>
