@@ -1,82 +1,127 @@
-import logo from "../assets/socket-white-logo.png";
-import ocLove from "../assets/oc-love.svg";
-import socketAssets from "../assets/Socket_Assets.zip";
-const liStyle =
-  "text-gray-300 hover:text-white cursor-pointer transition-all mx-2 text-sm md:text-base mb-1.5 md:mb-0";
+import socketLogo from "../assets/socket-logo-black.svg";
+
+const navItmes = {
+  product: [
+    {
+      title: "Bungee",
+      url: "https://bungee.exchange/",
+    },
+    {
+      title: "Socket API",
+      url: "",
+    },
+    {
+      title: "Socket Plugin",
+      url: "",
+    },
+    {
+      title: "Socket Scan",
+      url: "",
+    },
+    {
+      title: "Socket SDK",
+      url: "",
+    },
+    {
+      title: "Refuel",
+      url: "https://www.bungee.exchange/refuel",
+    },
+  ],
+  resources: [
+    {
+      title: "API docs",
+      url: "https://docs.socket.tech/socket-api/introduction",
+    },
+    {
+      title: "Plugin docs",
+      url: "https://sockettech.notion.site/Socket-Widget-Docs-b905871870e343c6833169ebbd356790",
+    },
+    {
+      title: "SDK docs",
+      url: "https://socketdottech.github.io/socket-v2-sdk-docs/",
+    },
+    { title: "Blog", url: "https://medium.com/socketdottech" },
+  ],
+  company: [
+    {
+      title: "About",
+      url: "",
+    },
+    {
+      title: "Brand Assets",
+      url: "",
+    },
+    {
+      title: "Careers",
+      url: "",
+    },
+    {
+      title: "Contact",
+      url: "",
+    },
+    {
+      title: "Privacy Policy",
+      url: "",
+    },
+  ],
+};
+
 export const Footer = () => {
   return (
-    <div className="bg-oc-theme-dark">
-      <div className="container border-b border-dashed border-gray-600 border-opacity-50 pt-16 pb-5 px-5 mx-auto">
-        <div className="flex justify-evenly md:justify-between md:items-center">
-          <div className="flex flex-1 mr-3 md:mr-0">
-            <img src={logo} alt="socket logo" className="h-12 md:h-16" />
+    <div className="bg-white pt-[3.375rem]">
+      <div className="container mx-auto">
+        <div className="flex pb-12">
+          <div className="flex-1">
+            <img src={socketLogo} />
           </div>
+          <div className="flex-1">
+            <NavTitle>Product</NavTitle>
+            <div className="flex flex-col gap-2">
+              {navItmes.product.map((item) => (
+                <NavItem label={item.title} url={item.url} />
+              ))}
+            </div>
+          </div>
+          <div className="flex-1">
+            <NavTitle>Resources</NavTitle>
+            <div className="flex flex-col gap-2">
+              {navItmes.product.map((item) => (
+                <NavItem label={item.title} url={item.url} />
+              ))}
+            </div>
+          </div>
+          <div className="flex-1">
+            <NavTitle>Company</NavTitle>
+            <div className="flex flex-col gap-2">
+              {navItmes.product.map((item) => (
+                <NavItem label={item.title} url={item.url} />
+              ))}
+            </div>
+          </div>
+        </div>
 
-          {/* links */}
-          <ul className="flex flex-col md:flex-row flex-1 justify-center md:border-l md:border-r border-gray-400">
-            <li className={liStyle}>
-              <a
-                href="https://angel.co/company/socket-tech/jobs"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Careers
-              </a>
-            </li>
-            <li className={liStyle}>
-              <a
-                href="https://docs.socket.tech"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Docs
-              </a>
-            </li>
-            <li className={liStyle}>
-              <a href="https://medium.com/socketdottech" target="_blank" rel="noopener noreferrer">
-                Blog
-              </a>
-            </li>
-            <li className={liStyle}>
-              <a href={socketAssets} download>
-                Media Kit
-              </a>
-            </li>
-          </ul>
-
-          {/* social */}
-          <ul className="flex flex-col md:flex-row flex-1 md:justify-end">
-            <li className={liStyle}>
-              <a
-                href="https://discord.gg/zfKJR8yWaH"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Discord
-              </a>
-            </li>
-            <li className={liStyle}>
-              <a
-                href="https://twitter.com/socketdottech"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
-            </li>
-          </ul>
+        {/* bottom bar */}
+        <div className="py-7 border-t border-black/[0.07] flex justify-between items-center">
+          <p className="text-lg font-medium text-black/80">
+            Partnership contact:{" "}
+            <a href="mailto:sales@socket.tech">sales@socket.tech</a>
+          </p>
+          <div></div>
         </div>
       </div>
-      <div className="container px-5 py-5 md:py-10 mx-auto flex flex-col md:flex-row justify-between items-center">
-        <p className="text-gray-400 text-sm md:text-base mb-2 md:mb-0">
-          All rights reserved
-        </p>
-        <p className="text-gray-300 flex items-center text-sm md:text-base">
-          Made with{" "}
-          <img src={ocLove} className="h-5 w-5 mx-1.5 border border-gray-300" />{" "}
-          by the OCs
-        </p>
-      </div>
     </div>
+  );
+};
+
+const NavTitle = ({ children }) => {
+  return (
+    <h4 className="text-[#07011A]/[0.58] font-bold uppercase mb-4">{children}</h4>
+  );
+};
+const NavItem = ({ label, url }) => {
+  return (
+    <a href={url} className="text-black/80 text-lg font-medium">
+      {label}
+    </a>
   );
 };
