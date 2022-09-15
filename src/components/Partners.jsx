@@ -93,7 +93,7 @@ const partners = [
 export const Partners = () => {
   return (
     <div className="bg-white pt-16 pb-8">
-      <div className="md:container rounded-[32px] overlay-bg mx-auto pt-14 pb-8 px-11">
+      <div className="md:socket-container rounded-[32px] overlay-bg mx-auto pt-14 pb-8 px-11">
         <h2 className="heading-2 text-center">Powering the Best</h2>
         <p className="supporting-text text-center mt-2">
           Socket powers interoperability for the biggest decentralised apps and

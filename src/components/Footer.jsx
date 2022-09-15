@@ -69,7 +69,7 @@ const navItmes = {
 export const Footer = () => {
   return (
     <div className="bg-white pt-[3.375rem]">
-      <div className="container mx-auto">
+      <div className="socket-container mx-auto px-[5.6875rem]">
         <div className="flex pb-12">
           <div className="flex-1">
             <img src={socketLogo} />
@@ -78,7 +78,7 @@ export const Footer = () => {
             <NavTitle>Product</NavTitle>
             <div className="flex flex-col gap-2">
               {navItmes.product.map((item) => (
-                <NavItem label={item.title} url={item.url} />
+                <NavItem label={item.title} url={item.url} key={item.title} />
               ))}
             </div>
           </div>
@@ -86,7 +86,7 @@ export const Footer = () => {
             <NavTitle>Resources</NavTitle>
             <div className="flex flex-col gap-2">
               {navItmes.resources.map((item) => (
-                <NavItem label={item.title} url={item.url} />
+                <NavItem label={item.title} url={item.url} key={item.title} />
               ))}
             </div>
           </div>
@@ -94,7 +94,7 @@ export const Footer = () => {
             <NavTitle>Company</NavTitle>
             <div className="flex flex-col gap-2">
               {navItmes.company.map((item) => (
-                <NavItem label={item.title} url={item.url} />
+                <NavItem label={item.title} url={item.url} key={item.title} />
               ))}
             </div>
           </div>
@@ -115,12 +115,14 @@ export const Footer = () => {
 
 const NavTitle = ({ children }) => {
   return (
-    <h4 className="text-[#07011A]/[0.58] font-bold uppercase mb-4">{children}</h4>
+    <h4 className="text-[#07011A]/[0.58] font-bold uppercase mb-4">
+      {children}
+    </h4>
   );
 };
 const NavItem = ({ label, url }) => {
   return (
-    <a href={url} className="text-black/80 text-lg font-medium">
+    <a href={url} className="text-black/80 text-lg font-medium leading-[26.1px]">
       {label}
     </a>
   );

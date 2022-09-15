@@ -66,4 +66,8 @@ html {
   .overlay-bg {
     @apply bg-zinc-50;
   }
+
+  .socket-container {
+    max-width: 1312px;
+  }
 }

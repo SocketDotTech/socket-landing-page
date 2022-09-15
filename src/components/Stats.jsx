@@ -1,7 +1,7 @@
 export const Stats = () => {
   return (
     <div className="pt-[4.5rem] pb-[3.875rem] pb- bg-white">
-      <div className="container mx-auto">
+      <div className="socket-container mx-auto px-[4.625rem]">
         <h2 className="heading-2 text-center">
           Trusted by the Best{" "}
           <span className="text-socket-theme">Wallets and dApps</span>

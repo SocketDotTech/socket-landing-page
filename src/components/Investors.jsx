@@ -116,7 +116,7 @@ const angel = [
 export const Investors = () => {
   return (
     <div className="bg-white pt-14 pb-14">
-      <div className="container mx-auto">
+      <div className="socket-container mx-auto">
         <h2 className="heading-2 text-center">Backed by the Best</h2>
         <p className="supportive-text text-center mt-1">
           Our global investors include angel investors and leading funds
