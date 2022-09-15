@@ -55,7 +55,7 @@ html {
   }
 
   .heading-2 {
-    @apply text-5xl font-extrabold text-socket-gray-90
+    @apply text-5xl font-extrabold text-socket-gray-90;
   }
 
   .supporting-text{
