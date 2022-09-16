@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import Logo from "../assets/socket-white-logo.png";
 import { Menu } from "react-feather";
 import { Button } from "./Button";
+import { Link } from "react-router-dom";
 const linkStyle =
   "text-white hover:text-white/80 cursor-pointer transition-all text-lg font-bold";
 
@@ -40,12 +41,12 @@ export const Header = () => {
       </div>
 
       <div className="flex items-center justify-center gap-[48px] flex-1">
-        <a
+        <Link
           className={`${linkStyle} ${isMobile ? mobileListStyle : ""}`}
-          href="/"
+          to="/"
         >
           Home
-        </a>
+        </Link>
         <a
           className={`${linkStyle} ${isMobile ? mobileListStyle : ""}`}
           href="https://angel.co/company/socket-tech/jobs"
@@ -64,15 +65,13 @@ export const Header = () => {
         >
           Docs
         </a>
-        <a
+        <Link
           className={`${linkStyle} ${isMobile ? mobileListStyle : ""}`}
-          href="https://docs.socket.tech"
-          target="_blank"
-          rel="noopener noreferrer"
+          to="team"
           onClick={toggleMenu}
         >
           Team
-        </a>
+        </Link>
       </div>
 
       <div className="flex-1 flex justify-end items-center">

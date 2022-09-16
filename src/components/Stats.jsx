@@ -9,7 +9,7 @@ export const Stats = () => {
         <div className="px-[4.375rem] flex justify-between overlay-bg pt-14 pb-12 mt-[1.375rem]">
           <div>
             <p className="text-[6rem] text-center font-black leading-[6rem]">
-              <span className="text-socket-gray-40">$</span>600M
+              <span className="text-socket-gray-40">$</span>675M
             </p>
             <p className="text-socket-gray-90 text-2xl font-extrabold text-center">
               Volume Transferred
@@ -24,7 +24,7 @@ export const Stats = () => {
             </p>
           </div>
           <div>
-            <p className="text-[6rem] text-center font-black leading-[6rem]">12</p>
+            <p className="text-[6rem] text-center font-black leading-[6rem]">9</p>
             <p className="text-socket-gray-90 text-2xl font-extrabold text-center">
               Chains Supported
             </p>

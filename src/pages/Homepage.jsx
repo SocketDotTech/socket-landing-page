@@ -19,7 +19,6 @@ export const Homepage = () => {
       <SocialSection />
       <Bungee />
       <PreFooter />
-      <Footer />
     </div>
   );
 };

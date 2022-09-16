@@ -52,14 +52,35 @@ import ambireIconFilled from "../assets/partners/colored/ambire.svg";
 
 const partners = [
   {
-    name: "Perpetual Protocol",
-    icon: perpetualIcon,
-    iconFilled: perpetualIconFilled
+    name: "Zapper",
+    icon: ZapperIcon,
+    iconFilled: ZapperIconFilled
+  },
+  {
+    name: "Zerion",
+    icon: ZerionIcon,
+    iconFilled: ZerionIconFilled
   },
   {
     name: "Synthetix",
     icon: synthetixIcon,
     iconFilled: synthetixIconFilled
+  },
+  // lyra here
+  {
+    name: "Perpetual Protocol",
+    icon: perpetualIcon,
+    iconFilled: perpetualIconFilled
+  },
+  {
+    name: "OneKey",
+    icon: OneKeyIcon,
+    iconFilled: OneKeyIconFilled
+  },
+  {
+    name: "Sequence",
+    icon: sequenceIcon,
+    iconFilled: sequenceIconFilled
   },
   {
     name: "Premia",
@@ -102,29 +123,9 @@ const partners = [
     iconFilled: atlantisIconFilled
   },
   {
-    name: "Sequence",
-    icon: sequenceIcon,
-    iconFilled: sequenceIconFilled
-  },
-  {
     name: "Steakwallet",
     icon: steakIcon,
     iconFilled: steakIconFilled
-  },
-  {
-    name: "Zapper",
-    icon: ZapperIcon,
-    iconFilled: ZapperIconFilled
-  },
-  {
-    name: "Zerion",
-    icon: ZerionIcon,
-    iconFilled: ZerionIconFilled
-  },
-  {
-    name: "OneKey",
-    icon: OneKeyIcon,
-    iconFilled: OneKeyIconFilled
   },
   {
     name: "imToken",
@@ -187,8 +188,8 @@ const IconFilledTab = ({ name, icon, iconFilled }) => {
   return (
     <div
       className="py-1.5 px-[1.125rem] bg-white flex gap-3 items-center"
-      onMouseOver={() => setHover(true)}
-      onMouseOut={() => setHover(false)}
+      // onMouseOver={() => setHover(true)}
+      // onMouseOut={() => setHover(false)}
     >
       <div className="border border-black/[0.02] rounded-[6.5px] h-[2.375rem] w-[2.375rem] flex items-center justify-center">
         <img src={hover ? iconFilled : icon} />

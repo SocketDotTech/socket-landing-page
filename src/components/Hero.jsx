@@ -11,7 +11,7 @@ const defaultOptions = {
 };
 export const Hero = () => {
   return (
-    <div className="bg-socket-theme pt-[8.75rem] pb-[6.25rem]">
+    <div className="bg-socket-theme pt-[8.75rem] pb-[6.25rem] flex-1">
       <div className="socket-container mx-auto">
         <div className="flex flex-col gap-3 items-center">
           <h1 className="text-white text-[3.5rem] font-bold text-center max-w-[535px] mx-auto leading-[63.84px]">

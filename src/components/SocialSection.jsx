@@ -22,7 +22,9 @@ export const SocialSection = () => {
           Be a part of new global world
         </h2>
         <Button>Join us on Discord</Button>
-        <Lottie options={defaultOptions} />
+        <div className="max-w-[1158px]">
+          <Lottie options={defaultOptions} />
+        </div>
       </div>
     </div>
   );

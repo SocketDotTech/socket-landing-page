@@ -1,58 +1,30 @@
 import rightArrow from "../assets/icons/right-arrow.svg";
-import Lottie from "react-lottie";
 
-import gearIcon from "../assets/lottie/gear-icon.json";
-import rotateIcon from "../assets/lottie/rotate-icon.json";
-import switchIcon from "../assets/lottie/switch-icon.json";
-
-const gearIconOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: gearIcon,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
-
-const rotateIconOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: rotateIcon,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
-
-const switchIconOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: switchIcon,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
+import gearIcon from "../assets/icons/gear-api.svg";
+import rotateIcon from "../assets/icons/rotate.svg";
+import switchIcon from "../assets/icons/switch.svg";
 
 const productData = [
   {
     title: "Socket SDK",
     desc: "Send, track and claim arbitrary cross-chain messages using our frame-agnostic SDKs.",
     url: "https://salilnaik.com",
-    icon: rotateIconOptions,
-    urlLabel: "Read Doc",
+    icon: rotateIcon,
+    urlLabel: "Read the Docs",
   },
   {
     title: "Socket API",
     desc: "Enable seamless cross-chain swaps in your app or protocol with our tested API.",
     url: "https://salilnaik.com",
-    icon: gearIconOptions,
-    urlLabel: "Request API key",
+    icon: gearIcon,
+    urlLabel: "Read the Docs",
   },
   {
     title: "Socket Plugin",
     desc: "Build a customized bridge tailored to your needs with just a few lines of code.",
     url: "https://salilnaik.com",
-    icon: switchIconOptions,
-    urlLabel: "Read Doc",
+    icon: switchIcon,
+    urlLabel: "Read the Docs",
   },
 ];
 
@@ -62,7 +34,7 @@ export const PreFooter = () => {
       <div className="socket-container mx-auto">
         <h2 className="heading-2 text-center">Start building today</h2>
         <p className="supportive-text text-center mt-2 mb-9">
-          Unmatched access to 12+ chains and more than 50 partners to integrate
+          Unmatched access to 9 chains and more than 50 partners to integrate
           into your product.
         </p>
         <div className="flex gap-8 mt-9 px-[5.6875rem]">
@@ -87,7 +59,7 @@ const ProductCard = ({ title, desc, icon, url, urlLabel }) => {
     <div className="bg-transparent pt-[3.375rem] px-11 pb-7 flex flex-col justify-between flex-1 border-2 border-[#E0C7F9] rounded-2xl gap-10">
       <div>
         <div className="w-16 h-16 mb-6">
-          <Lottie options={icon} />
+          <img src={icon} alt="icon" className="w-full h-full" />
         </div>
         <div>
           <h3 className="text-[2rem] font-extrabold text-socket-gray-90 mb-1.5 leading-[40px]">

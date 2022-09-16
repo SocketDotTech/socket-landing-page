@@ -6,22 +6,22 @@ const navItmes = {
       title: "Bungee",
       url: "https://bungee.exchange/",
     },
-    {
-      title: "Socket API",
-      url: "",
-    },
-    {
-      title: "Socket Plugin",
-      url: "",
-    },
-    {
-      title: "Socket Scan",
-      url: "",
-    },
-    {
-      title: "Socket SDK",
-      url: "",
-    },
+    // {
+    //   title: "Socket API",
+    //   url: "",
+    // },
+    // {
+    //   title: "Socket Plugin",
+    //   url: "",
+    // },
+    // {
+    //   title: "Socket Scan",
+    //   url: "",
+    // },
+    // {
+    //   title: "Socket SDK",
+    //   url: "",
+    // },
     {
       title: "Refuel",
       url: "https://www.bungee.exchange/refuel",
@@ -29,7 +29,7 @@ const navItmes = {
   ],
   resources: [
     {
-      title: "API docs",
+      title: "Socket API docs",
       url: "https://docs.socket.tech/socket-api/introduction",
     },
     {
@@ -40,13 +40,9 @@ const navItmes = {
       title: "SDK docs",
       url: "https://socketdottech.github.io/socket-v2-sdk-docs/",
     },
-    { title: "Blog", url: "https://medium.com/socketdottech" },
   ],
   company: [
-    {
-      title: "About",
-      url: "",
-    },
+    { title: "Blog", url: "https://medium.com/socketdottech" },
     {
       title: "Brand Assets",
       url: "",
@@ -55,14 +51,14 @@ const navItmes = {
       title: "Careers",
       url: "",
     },
-    {
-      title: "Contact",
-      url: "",
-    },
-    {
-      title: "Privacy Policy",
-      url: "",
-    },
+    // {
+    //   title: "Contact",
+    //   url: "",
+    // },
+    // {
+    //   title: "Privacy Policy",
+    //   url: "",
+    // },
   ],
 };
 
@@ -75,7 +71,7 @@ export const Footer = () => {
             <img src={socketLogo} />
           </div>
           <div className="flex-1">
-            <NavTitle>Product</NavTitle>
+            {/* <NavTitle>Product</NavTitle> */}
             <div className="flex flex-col gap-2">
               {navItmes.product.map((item) => (
                 <NavItem label={item.title} url={item.url} key={item.title} />
@@ -83,7 +79,7 @@ export const Footer = () => {
             </div>
           </div>
           <div className="flex-1">
-            <NavTitle>Resources</NavTitle>
+            {/* <NavTitle>Resources</NavTitle> */}
             <div className="flex flex-col gap-2">
               {navItmes.resources.map((item) => (
                 <NavItem label={item.title} url={item.url} key={item.title} />
@@ -101,13 +97,13 @@ export const Footer = () => {
         </div>
 
         {/* bottom bar */}
-        <div className="py-7 border-t border-black/[0.07] flex justify-between items-center">
+        {/* <div className="py-7 border-t border-black/[0.07] flex justify-between items-center">
           <p className="text-lg font-medium text-black/80">
             Partnership contact:{" "}
             <a href="mailto:sales@socket.tech">sales@socket.tech</a>
           </p>
           <div></div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
