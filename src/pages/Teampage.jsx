@@ -1,7 +1,7 @@
 import { Button } from "../components/Button";
 
 // Team
-import vc from "../assets/team/vc.jpeg";
+import vc from "../assets/team/vc.jpg";
 import rk from "../assets/team/rk.jpg";
 import arth from "../assets/team/arth.jpg";
 import varun from "../assets/team/varun.jpg";
@@ -10,7 +10,7 @@ import aniket from "../assets/team/aniket.jpg";
 import salil from "../assets/team/salil.png";
 import ananya from "../assets/team/ananya.jpg";
 import shrey from "../assets/team/shrey.jpg";
-import ameesha from "../assets/team/ameesha.jpeg";
+import ameesha from "../assets/team/ameesha.jpg";
 import dpb from "../assets/team/dpb.jpg";
 import absolute from "../assets/team/absolute.png";
 import sriram from "../assets/team/sriram.jpg";
