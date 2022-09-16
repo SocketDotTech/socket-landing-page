@@ -43,20 +43,26 @@ const teamData = [
     imgUrl: varun,
   },
   {
+    name: "Sriram Vasudevan",
+    designation: "Head of Strategy & Marketing",
+    twitter: "sriramvas",
+    imgUrl: sriram,
+  },
+  {
     name: "Vamsi Reddy",
-    designation: "Senior Blockchain Developer",
+    designation: "Senior Blockchain Engineer",
     twitter: "reddyismav",
     imgUrl: vamsi,
   },
   {
     name: "Aniket Sharma",
-    designation: "Blockchain Developer",
+    designation: "Blockchain Engineer",
     twitter: "aniket965as",
     imgUrl: aniket,
   },
   {
     name: "Salil Naik",
-    designation: "Senior Frontend Developer",
+    designation: "Senior Frontend Engineer",
     twitter: "0xSalilNaik",
     imgUrl: salil,
   },
@@ -67,13 +73,8 @@ const teamData = [
   },
   {
     name: "Vishnu Prasad",
-    designation: "Dev Ops",
+    designation: "Senior Backend Engineer",
     imgUrl: vishnu,
-  },
-  {
-    name: "Ananya Agrawal",
-    designation: "Blockchain Engineer",
-    imgUrl: ananya,
   },
   {
     name: "Shrey Keny",
@@ -82,10 +83,9 @@ const teamData = [
     imgUrl: shrey,
   },
   {
-    name: "Sriram Vasudevan",
-    designation: "Marketing & Community",
-    twitter: "sriramvas",
-    imgUrl: sriram,
+    name: "Ananya Agrawal",
+    designation: "Backend Engineer",
+    imgUrl: ananya,
   },
   {
     name: "Devain Pal Bansal",
@@ -95,7 +95,7 @@ const teamData = [
   },
   {
     name: "Apurva Mishra",
-    designation: "kya hai?",
+    designation: "Marketing & Operations",
     imgUrl: apurva,
   },
   {
@@ -147,6 +147,7 @@ export const Teampage = () => {
                 name={mate.name}
                 designation={mate.designation}
                 imgUrl={mate.imgUrl}
+                twitterUrl={mate.twitter}
                 key={mate.name}
               />
             ))}
@@ -158,22 +159,24 @@ export const Teampage = () => {
 };
 
 export const TeamMate = (props) => {
-  const { name, designation, imgUrl } = props;
+  const { name, designation, imgUrl, twitterUrl } = props;
   return (
     <div className="w-1/4 p-4">
-      <div className="w-full pb-[110%] mb-[15px] relative">
-        <img
-          src={imgUrl}
-          alt={`${name}'s picture`}
-          className="w-full h-full object-cover absolute top-0 left-0"
-        />
-      </div>
-      <h3 className="text-socket-gray-90 text-[22.44px] leading-[32.53px] font-extrabold">
-        {name}
-      </h3>
-      <p className="text-socket-gray-70 text-[16.8px] leading-[24px] font-medium">
-        {designation}
-      </p>
+      <a href={twitterUrl ? `https://twitter.com/${twitterUrl}`: null} target="_blank" rel="noopener noreferrer">
+        <div className="w-full pb-[110%] mb-[15px] relative hover:grayscale-0 grayscale">
+          <img
+            src={imgUrl}
+            alt={`${name}'s picture`}
+            className="w-full block h-full object-cover absolute top-0 left-0"
+          />
+        </div>
+        <h3 className="text-socket-gray-90 text-[22.44px] leading-[32.53px] font-extrabold">
+          {name}
+        </h3>
+        <p className="text-socket-gray-70 text-[16.8px] leading-[24px] font-medium">
+          {designation}
+        </p>
+      </a>
     </div>
   );
 };
