@@ -33,10 +33,10 @@ export const PreFooter = () => {
     <div className="bg-socket-theme-light pt-[4.625rem] pb-14">
       <div className="socket-container mx-auto">
         <h2 className="heading-2 text-center">Start building today</h2>
-        {/* <p className="supportive-text text-center mt-2 mb-9">
-          Unmatched access to 9 chains and more than 50 partners to integrate
-          into your product.
-        </p> */}
+        <p className="supportive-text text-center mt-2 mb-9">
+          Get started building with Socket and take your apps cross-chain in as
+          little as 20 mins
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-9 lg:px-[5.6875rem]">
           {productData.map((item) => (
             <ProductCard

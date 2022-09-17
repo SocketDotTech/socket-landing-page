@@ -6,22 +6,6 @@ const navItmes = {
       title: "Bungee",
       url: "https://bungee.exchange/",
     },
-    // {
-    //   title: "Socket API",
-    //   url: "",
-    // },
-    // {
-    //   title: "Socket Plugin",
-    //   url: "",
-    // },
-    // {
-    //   title: "Socket Scan",
-    //   url: "",
-    // },
-    // {
-    //   title: "Socket SDK",
-    //   url: "",
-    // },
     {
       title: "Refuel",
       url: "https://www.bungee.exchange/refuel",
@@ -49,44 +33,36 @@ const navItmes = {
     },
     {
       title: "Careers",
-      url: "",
+      url: "https://angel.co/company/socket-tech/jobs",
     },
-    // {
-    //   title: "Contact",
-    //   url: "",
-    // },
-    // {
-    //   title: "Privacy Policy",
-    //   url: "",
-    // },
   ],
 };
 
 export const Footer = () => {
   return (
     <div className="bg-white pt-[3.375rem]">
-      <div className="socket-container mx-auto px-[5.6875rem]">
-        <div className="flex pb-12">
-          <div className="flex-1">
+      <div className="socket-container mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 pb-12 lg:px-[5.6875rem]">
+          <div>
             <img src={socketLogo} />
           </div>
-          <div className="flex-1">
-            {/* <NavTitle>Product</NavTitle> */}
+          <div>
+            <NavTitle>Products</NavTitle>
             <div className="flex flex-col gap-2">
               {navItmes.product.map((item) => (
                 <NavItem label={item.title} url={item.url} key={item.title} />
               ))}
             </div>
           </div>
-          <div className="flex-1">
-            {/* <NavTitle>Resources</NavTitle> */}
+          <div>
+            <NavTitle>Docs</NavTitle>
             <div className="flex flex-col gap-2">
               {navItmes.resources.map((item) => (
                 <NavItem label={item.title} url={item.url} key={item.title} />
               ))}
             </div>
           </div>
-          <div className="flex-1">
+          <div>
             <NavTitle>Company</NavTitle>
             <div className="flex flex-col gap-2">
               {navItmes.company.map((item) => (
@@ -118,7 +94,10 @@ const NavTitle = ({ children }) => {
 };
 const NavItem = ({ label, url }) => {
   return (
-    <a href={url} className="text-black/80 text-lg font-medium leading-[26.1px]">
+    <a
+      href={url}
+      className="text-black/80 text-lg font-medium leading-[26.1px]"
+    >
       {label}
     </a>
   );

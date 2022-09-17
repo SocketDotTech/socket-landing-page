@@ -1,16 +1,6 @@
-import Lottie from "react-lottie";
 import { Button } from "./Button";
-import animationData from "../assets/lottie/landing-page.json";
 import heroFallback from "../assets/hero-fallback.svg";
 
-const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: animationData,
-  // rendererSettings: {
-  //   preserveAspectRatio: "xMidYMid slice",
-  // },
-};
 export const Hero = () => {
   return (
     <div className="bg-socket-theme pt-[8.75rem] pb-14 md:pb-[6.25rem] flex-1">
@@ -31,7 +21,7 @@ export const Hero = () => {
               external
               bgColor="bg-socket-gray-100"
             >
-              Read Documentation
+              Read the docs
             </Button>
             <Button
               type="link"

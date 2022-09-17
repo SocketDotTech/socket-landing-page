@@ -79,7 +79,7 @@ export const Header = () => {
           bgColor="bg-socket-gray-100"
           textColor="text-white"
         >
-          Try Bungee App
+          Try Bungee
         </Button>
       </div>
 
@@ -126,8 +126,12 @@ export const Header = () => {
                 Resources
               </h3>
               <ul className="flex flex-col gap-1 items-start">
-                {resources.map((item) => (
-                  <Anchor url={item.url} classNames={mobileMenuStyle}>
+                {resources.map((item, index) => (
+                  <Anchor
+                    url={item.url}
+                    classNames={mobileMenuStyle}
+                    key={index}
+                  >
                     {item.title}
                   </Anchor>
                 ))}
@@ -142,7 +146,7 @@ export const Header = () => {
             rel="noopener noreferrer"
             className="bg-socket-theme text-white font-bold py-4 rounded-lg flex items-center justify-center mt-7"
           >
-            Try Bungee app
+            Try Bungee
           </a>
 
           {/* Close button */}

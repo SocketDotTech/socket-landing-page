@@ -1,5 +1,4 @@
 import { Investors } from "../components/Investors";
-import { Footer } from "../components/Footer";
 import { Partners } from "../components/Partners";
 import { ValueProp } from "../components/ValueProp";
 import { Stats } from "../components/Stats";

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import thunder from "../assets/icons/thunder.svg";
 
 // gray icons
 import perpetualIcon from "../assets/partners/gray/perpetual.svg";
@@ -166,10 +167,10 @@ export const Partners = () => {
   return (
     <div className="bg-white pt-16 pb-8">
       <div className="socket-container mx-auto">
-        <div className="rounded-[20px] md:rounded-[32px] overlay-bg mx-auto p-7 md:pt-14 md:pb-8 md:px-11">
+        <div className="rounded-[20px] md:rounded-[32px] overlay-bg mx-auto py-7 px-3 md:pt-14 md:pb-8 md:px-11 relative">
           <h2 className="heading-2 text-center">Powering the Best</h2>
           <p className="supporting-text text-center mt-2">
-            More than 30 apps are getting plugged in to Socket as you read this
+            More than 30 apps are getting plugged into Socket as you read this
           </p>
           <div className="flex flex-wrap gap-4 md:gap-[13px] mt-10 justify-center">
             {partners.map((item) => (
@@ -181,6 +182,8 @@ export const Partners = () => {
               />
             ))}
           </div>
+
+          <img src={thunder} className="hidden lg:block absolute top-9 right-20" />
         </div>
       </div>
     </div>
@@ -191,14 +194,14 @@ const IconFilledTab = ({ name, icon, iconFilled }) => {
   const [hover, setHover] = useState(false);
   return (
     <div
-      className="py-1.5 px-[1.125rem] bg-white flex gap-3 items-center"
+      className="py-1 md:py-1.5 px-1 md:px-[1.125rem] bg-white flex gap-1.5 md:gap-3 items-center"
       // onMouseOver={() => setHover(true)}
       // onMouseOut={() => setHover(false)}
     >
-      <div className="border border-black/[0.02] rounded-[6.5px] h-[2.375rem] w-[2.375rem] flex items-center justify-center">
+      <div className="border border-black/[0.02] rounded-[6.5px] h-[2rem] w-[2rem] md:h-[2.375rem] md:w-[2.375rem] flex items-center justify-center">
         <img src={hover ? iconFilled : icon} />
       </div>
-      <p className="text-socket-gray-80 font-extrabold">{name}</p>
+      <p className="text-socket-gray-80 font-extrabold text-sm md:text-base">{name}</p>
     </div>
   );
 };
