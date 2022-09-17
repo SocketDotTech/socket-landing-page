@@ -32,9 +32,9 @@ export const ValueProp = () => {
         </h2>
         <p className="supporting-text text-center mt-2">
           We obsess over every small design detail so you have a seamless
-          developer experience while taking your dapps cross chain
+          developer experience while taking your apps cross-chain
         </p>
-        <div className="gap-8 mt-14 lg:px-[4.625rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="gap-4 md:gap-8 mt-8 md:mt-14 lg:px-[4.625rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {valuePropData.map((item) => (
             <ValuePropCard
               title={item.title}
@@ -53,14 +53,14 @@ const ValuePropCard = ({ title, desc, icon, url }) => {
   return (
     <div className="overlay-bg py-7 px-6 flex flex-col justify-between items-start">
       <div>
-        <div className="flex justify-start w-[62px] h-[62px] pointer-events-none mb-[39px]">
+        <div className="flex justify-start w-10 h-10 md:w-[62px] md:h-[62px] pointer-events-none mb-5 md:mb-[39px]">
           <img src={icon} alt="icon" className="w-full h-full"/>
         </div>
         <div>
-          <h3 className="text-2xl font-extrabold text-socket-gray-90 mb-2">
+          <h3 className="text-xl md:text-2xl font-extrabold text-socket-gray-90 mb-2">
             {title}
           </h3>
-          <p className="text-lg font-medium text-socket-gray-70 leading-[26.1px]">
+          <p className="md:text-lg font-medium text-socket-gray-70 leading-[26.1px]">
             {desc}
           </p>
         </div>

@@ -118,10 +118,10 @@ export const Investors = () => {
     <div className="bg-white pt-14 pb-14">
       <div className="socket-container mx-auto">
         <h2 className="heading-2 text-center">Backed by the Best</h2>
-        <p className="supportive-text text-center mt-1">
+        {/* <p className="supportive-text text-center mt-1">
           Our global investors include angel investors and leading funds
-        </p>
-        <div className="grid gap-x-[18px] gap-y-6 justify-center mt-[3.75rem] grid-cols-3 lg:grid-cols-5 max-w-[1200px] mx-auto">
+        </p> */}
+        <div className="grid gap-x-[18px] gap-y-2 md:gap-y-6 justify-center mt-[3.75rem] grid-cols-2 md:grid-cols-3 lg:grid-cols-5 max-w-[1200px] mx-auto">
           {investors.map((item, index) => (
             <InvestorLogo logo={item.img} url={item.url} key={index} />
           ))}

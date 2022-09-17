@@ -21,10 +21,10 @@ export const SocialSection = () => {
         <h2 className="heading-2 text-center mb-2">
           Be a part of new global world
         </h2>
-        <Button>Join us on Discord</Button>
         <div className="max-w-[1158px]">
           <Lottie options={defaultOptions} />
         </div>
+        <Button>Join us on Discord</Button>
       </div>
     </div>
   );

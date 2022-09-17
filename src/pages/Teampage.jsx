@@ -133,7 +133,7 @@ export const Teampage = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white pt-[3.125rem] pb-[6.25rem]">
+      <div className="bg-white pt-[3.125rem] pb-[3.125rem] md:pb-[6.25rem]">
         <div className="socket-container mx-auto">
           <h2 className="heading-2 text-center">Meet the Team</h2>
           <p className="supportive-text text-center mt-1">
@@ -161,7 +161,7 @@ export const Teampage = () => {
 export const TeamMate = (props) => {
   const { name, designation, imgUrl, twitterUrl } = props;
   return (
-    <div className="w-1/4 p-4">
+    <div className="w-1/2 md:w-1/3 lg:w-1/5 p-4">
       <a href={twitterUrl ? `https://twitter.com/${twitterUrl}`: null} target="_blank" rel="noopener noreferrer">
         <div className="w-full pb-[110%] mb-[15px] relative hover:grayscale-0 grayscale">
           <img
@@ -170,10 +170,10 @@ export const TeamMate = (props) => {
             className="w-full block h-full object-cover absolute top-0 left-0"
           />
         </div>
-        <h3 className="text-socket-gray-90 text-[22.44px] leading-[32.53px] font-extrabold">
+        <h3 className="text-socket-gray-90 text-lg md:text-[22.44px] md:leading-[32.53px] font-extrabold">
           {name}
         </h3>
-        <p className="text-socket-gray-70 text-[16.8px] leading-[24px] font-medium">
+        <p className="text-socket-gray-70 md:text-[16.8px] md:leading-[24px] font-medium">
           {designation}
         </p>
       </a>

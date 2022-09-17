@@ -11,7 +11,7 @@ export const Bungee = () => {
           plugging into the Socket Liquidity Meta-Layer
         </p>
         <Button bgColor="bg-socket-gray-100">Go to App</Button>
-        <img src={bungeeScreenshot} alt="screenshot of the bungee app" className="mt-6 w-full lg:w-auto max-w-[988px] rounded-xl"/>
+        <img src={bungeeScreenshot} alt="screenshot of the bungee app" className="mt-6 w-full lg:w-auto max-w-[988px] rounded md:rounded-xl"/>
       </div>
     </div>
   );

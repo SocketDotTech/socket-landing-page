@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="h-screen bg-oc-dark overflow-x-hidden">
+    <div className="h-screen overflow-x-hidden">
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />

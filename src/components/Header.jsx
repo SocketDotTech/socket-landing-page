@@ -7,7 +7,6 @@ const linkStyle =
   "text-white hover:text-white/80 cursor-pointer transition-all text-lg font-bold";
 
 const mobileMenuStyle = "text-socket-gray-90 font-medium";
-const mobileListStyle = "text-center bg-oc-dark p-2 rounded-sm my-1";
 const resources = [
   {
     title: "Socket API docs",
@@ -68,7 +67,7 @@ export const Header = () => {
         <Anchor url="https://docs.socket.tech" classNames={linkStyle}>
           Docs
         </Anchor>
-        <Link className={linkStyle} to="team" onClick={toggleMenu}>
+        <Link className={linkStyle} to="team">
           Team
         </Link>
       </div>
@@ -99,23 +98,25 @@ export const Header = () => {
               <h3 className="text-socket-gray-70 font-bold uppercase mb-2">
                 Navigation
               </h3>
-              <ul className="flex flex-col gap-1">
+              <ul className="flex flex-col gap-1 items-start">
                 <Link to="/" className={mobileMenuStyle}>
                   Home
                 </Link>
                 <Anchor
                   url="https://angel.co/company/socket-tech/jobs"
                   classNames={mobileMenuStyle}
+                  onClick={toggleMenu}
                 >
                   Careers
                 </Anchor>
                 <Anchor
                   url="https://docs.socket.tech"
                   classNames={mobileMenuStyle}
+                  onClick={toggleMenu}
                 >
                   Docs
                 </Anchor>
-                <Link to="/" className={mobileMenuStyle}>
+                <Link to="/team" className={mobileMenuStyle}>
                   Team
                 </Link>
               </ul>
@@ -124,7 +125,7 @@ export const Header = () => {
               <h3 className="text-socket-gray-70 font-bold uppercase mb-2">
                 Resources
               </h3>
-              <ul className="flex flex-col gap-1">
+              <ul className="flex flex-col gap-1 items-start">
                 {resources.map((item) => (
                   <Anchor url={item.url} classNames={mobileMenuStyle}>
                     {item.title}
@@ -145,7 +146,7 @@ export const Header = () => {
           </a>
 
           {/* Close button */}
-          <MenuBtn classes="bg-black/10 absolute top-2 right-2">
+          <MenuBtn classes="bg-black/20 absolute top-2 right-2">
             <X
               className="lg:hidden text-socket-gray-100 w-4 h-4"
               onClick={toggleMenu}

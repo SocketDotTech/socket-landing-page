@@ -33,10 +33,10 @@ export const PreFooter = () => {
     <div className="bg-socket-theme-light pt-[4.625rem] pb-14">
       <div className="socket-container mx-auto">
         <h2 className="heading-2 text-center">Start building today</h2>
-        <p className="supportive-text text-center mt-2 mb-9">
+        {/* <p className="supportive-text text-center mt-2 mb-9">
           Unmatched access to 9 chains and more than 50 partners to integrate
           into your product.
-        </p>
+        </p> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-9 lg:px-[5.6875rem]">
           {productData.map((item) => (
             <ProductCard
@@ -56,16 +56,16 @@ export const PreFooter = () => {
 
 const ProductCard = ({ title, desc, icon, url, urlLabel }) => {
   return (
-    <div className="bg-white pt-[3.375rem] px-11 pb-7 flex flex-col justify-between flex-1 rounded-2xl gap-10">
+    <div className="bg-white pt-8 md:pt-[3.375rem] px-8 md:px-11 pb-7 flex flex-col justify-between flex-1 rounded-2xl gap-8 md:gap-10">
       <div>
-        <div className="w-16 h-16 mb-6">
+        <div className="w-10 md:w-16 h-10 md:h-16 mb-4 md:mb-6">
           <img src={icon} alt="icon" className="w-full h-full" />
         </div>
         <div>
-          <h3 className="text-[2rem] font-extrabold text-socket-gray-90 mb-1.5 leading-[40px]">
+          <h3 className="text-xl md:text-[2rem] font-extrabold text-socket-gray-90 mb-1.5 leading-[40px]">
             {title}
           </h3>
-          <p className="text-lg font-medium text-socket-gray-70 leading-[26.1px]">
+          <p className="md:text-lg font-medium text-socket-gray-70 md:leading-[26.1px]">
             {desc}
           </p>
         </div>

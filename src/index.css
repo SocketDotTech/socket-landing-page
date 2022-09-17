@@ -60,7 +60,7 @@ html {
   }
 
   .supporting-text {
-    @apply text-sm md:text-[1.125rem] text-socket-gray-70 md:font-medium;
+    @apply md:text-[1.125rem] text-socket-gray-70 md:font-medium;
   }
 
   .overlay-bg {
