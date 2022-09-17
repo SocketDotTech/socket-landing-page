@@ -8,7 +8,7 @@ export const Button = ({
   url,
   external = false,
 }) => {
-  const btnStyle = `${bgColor} ${textColor} px-7 py-[15px] rounded-[4px] font-bold text-lg leading-[22px]`;
+  const btnStyle = `${bgColor} ${textColor} px-4 py-3 md:px-7 md:py-[15px] rounded-[4px] font-medium md:font-bold md:text-lg leading-[22px]`;
 
   if (type === "link") {
     return (

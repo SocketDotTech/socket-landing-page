@@ -14,10 +14,10 @@ export const Hero = () => {
     <div className="bg-socket-theme pt-[8.75rem] pb-[6.25rem] flex-1">
       <div className="socket-container mx-auto">
         <div className="flex flex-col gap-3 items-center">
-          <h1 className="text-white text-[3.5rem] font-bold text-center max-w-[535px] mx-auto leading-[63.84px]">
+          <h1 className="text-white text-4xl md:text-[3.5rem] font-bold text-center max-w-[535px] mx-auto md:leading-[63.84px]">
             Powering Truly Multi-Chain Apps
           </h1>
-          <p className="text-white font-medium text-lg max-w-[644px] text-center">
+          <p className="text-white md:font-medium md:text-lg max-w-[644px] text-center">
             Socket is a complete interoperability stack which allows asset &amp;
             data transfers across chains, enabling developers to build truly
             cross chain apps

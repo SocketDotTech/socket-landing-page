@@ -48,59 +48,57 @@ import PlasmaIconFilled from "../assets/partners/colored/plasma.svg";
 import orangeIconFilled from "../assets/partners/colored/orange.svg";
 import ambireIconFilled from "../assets/partners/colored/ambire.svg";
 
-
-
 const partners = [
   {
     name: "Zapper",
     icon: ZapperIcon,
-    iconFilled: ZapperIconFilled
+    iconFilled: ZapperIconFilled,
   },
   {
     name: "Zerion",
     icon: ZerionIcon,
-    iconFilled: ZerionIconFilled
+    iconFilled: ZerionIconFilled,
   },
   {
     name: "Synthetix",
     icon: synthetixIcon,
-    iconFilled: synthetixIconFilled
+    iconFilled: synthetixIconFilled,
   },
   // lyra here
   {
     name: "Perpetual Protocol",
     icon: perpetualIcon,
-    iconFilled: perpetualIconFilled
+    iconFilled: perpetualIconFilled,
   },
   {
     name: "OneKey",
     icon: OneKeyIcon,
-    iconFilled: OneKeyIconFilled
+    iconFilled: OneKeyIconFilled,
   },
   {
     name: "Sequence",
     icon: sequenceIcon,
-    iconFilled: sequenceIconFilled
+    iconFilled: sequenceIconFilled,
   },
   {
     name: "Premia",
     icon: premiaIcon,
-    iconFilled: premiaIconFilled
+    iconFilled: premiaIconFilled,
   },
   {
     name: "dHedge",
     icon: dHedgeIcon,
-    iconFilled: dHedgeIconFilled
+    iconFilled: dHedgeIconFilled,
   },
   {
     name: "Rubicon",
     icon: rubiconIcon,
-    iconFilled: rubiconIconFilled 
+    iconFilled: rubiconIconFilled,
   },
   {
     name: "Polynomial",
     icon: polynomialIcon,
-    iconFilled: polynomialIconFilled
+    iconFilled: polynomialIconFilled,
   },
   {
     name: "Brahma.fi",
@@ -115,68 +113,75 @@ const partners = [
   {
     name: "OnDefy",
     icon: OnDefyIcon,
-    iconFilled: OnDefyIconFilled
+    iconFilled: OnDefyIconFilled,
   },
   {
     name: "Atlantis Loan",
     icon: atlantisIcon,
-    iconFilled: atlantisIconFilled
+    iconFilled: atlantisIconFilled,
   },
   {
     name: "Steakwallet",
     icon: steakIcon,
-    iconFilled: steakIconFilled
+    iconFilled: steakIconFilled,
   },
   {
     name: "imToken",
     icon: imTokenIcon,
-    iconFilled: imTokenIconFilled
+    iconFilled: imTokenIconFilled,
   },
   {
     name: "Choice",
     icon: choiceIcon,
-    iconFilled: choiceIconFilled
+    iconFilled: choiceIconFilled,
   },
   {
     name: "Via Exchange",
     icon: viaIcon,
-    iconFilled: viaIconFilled
+    iconFilled: viaIconFilled,
   },
   {
     name: "Etherspot",
     icon: EtherspotIcon,
-    iconFilled: EtherspotIconFilled
+    iconFilled: EtherspotIconFilled,
   },
   {
     name: "Plasma Finance",
     icon: PlasmaIcon,
-    iconFilled: PlasmaIconFilled
+    iconFilled: PlasmaIconFilled,
   },
   {
     name: "Orange Wallet",
     icon: orangeIcon,
-    iconFilled: orangeIconFilled
+    iconFilled: orangeIconFilled,
   },
   {
     name: "Ambire Wallet",
     icon: ambireIcon,
-    iconFilled: ambireIconFilled
+    iconFilled: ambireIconFilled,
   },
 ];
 
 export const Partners = () => {
   return (
     <div className="bg-white pt-16 pb-8">
-      <div className="md:socket-container rounded-[32px] overlay-bg mx-auto pt-14 pb-8 px-11">
-        <h2 className="heading-2 text-center">Powering the Best</h2>
-        <p className="supporting-text text-center mt-2">
-          Socket powers interoperability for the biggest decentralised apps and
-          wallets in the space
-        </p>
-        <div className="flex flex-wrap gap-[13px] mt-10 justify-center">
-          {partners.map((item) => (
-            <IconFilledTab name={item.name} icon={item.icon} key={item.name} iconFilled={item.iconFilled}/>
-          ))}
+      <div className="socket-container mx-auto">
+        <div className="rounded-[32px] overlay-bg mx-auto pt-14 pb-8 px-11">
+          <h2 className="heading-2 text-center">Powering the Best</h2>
+          <p className="supporting-text text-center mt-2">
+            Socket powers interoperability for the biggest decentralised apps
+            and wallets in the space
+          </p>
+          <div className="flex flex-wrap gap-[13px] mt-10 justify-center">
+            {partners.map((item) => (
+              <IconFilledTab
+                name={item.name}
+                icon={item.icon}
+                key={item.name}
+                iconFilled={item.iconFilled}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -184,7 +189,7 @@ export const Partners = () => {
 };
 
 const IconFilledTab = ({ name, icon, iconFilled }) => {
-  const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState(true);
   return (
     <div
       className="py-1.5 px-[1.125rem] bg-white flex gap-3 items-center"

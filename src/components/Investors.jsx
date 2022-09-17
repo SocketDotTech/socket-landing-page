@@ -121,13 +121,8 @@ export const Investors = () => {
         <p className="supportive-text text-center mt-1">
           Our global investors include angel investors and leading funds
         </p>
-        <div className="flex flex-wrap justify-center mt-[3.75rem]">
-          {investors.slice(0, 5).map((item, index) => (
-            <InvestorLogo logo={item.img} url={item.url} key={index} />
-          ))}
-        </div>
-        <div className="flex flex-wrap justify-center mt-6">
-          {investors.slice(5).map((item, index) => (
+        <div className="grid gap-x-[18px] gap-y-6 justify-center mt-[3.75rem] grid-cols-3 lg:grid-cols-5 max-w-[1200px] mx-auto">
+          {investors.map((item, index) => (
             <InvestorLogo logo={item.img} url={item.url} key={index} />
           ))}
         </div>

@@ -34,7 +34,7 @@ export const ValueProp = () => {
           We obsess over every small design detail so you have a seamless
           developer experience while taking your dapps cross chain
         </p>
-        <div className="flex gap-8 mt-14 px-[4.625rem]">
+        <div className="gap-8 mt-14 lg:px-[4.625rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {valuePropData.map((item) => (
             <ValuePropCard
               title={item.title}
@@ -51,7 +51,7 @@ export const ValueProp = () => {
 
 const ValuePropCard = ({ title, desc, icon, url }) => {
   return (
-    <div className="overlay-bg py-7 px-6 flex flex-col justify-between items-start flex-1">
+    <div className="overlay-bg py-7 px-6 flex flex-col justify-between items-start">
       <div>
         <div className="flex justify-start w-[62px] h-[62px] pointer-events-none mb-[39px]">
           <img src={icon} alt="icon" className="w-full h-full"/>

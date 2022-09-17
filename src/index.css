@@ -56,11 +56,11 @@ html {
   }
 
   .heading-2 {
-    @apply text-5xl font-extrabold text-socket-gray-90 leading-[57.6px];
+    @apply text-3xl md:text-5xl font-extrabold text-socket-gray-90 md:leading-[57.6px];
   }
 
   .supporting-text {
-    @apply text-[1.125rem] text-socket-gray-70 font-medium;
+    @apply text-sm md:text-[1.125rem] text-socket-gray-70 md:font-medium;
   }
 
   .overlay-bg {
@@ -68,6 +68,7 @@ html {
   }
 
   .socket-container {
-    max-width: 1312px;
+    @apply px-5 md:px-10 lg:px-5;
+    max-width: 1352px;
   }
 }

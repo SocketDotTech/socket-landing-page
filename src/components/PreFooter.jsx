@@ -37,7 +37,7 @@ export const PreFooter = () => {
           Unmatched access to 9 chains and more than 50 partners to integrate
           into your product.
         </p>
-        <div className="flex gap-8 mt-9 px-[5.6875rem]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-9 lg:px-[5.6875rem]">
           {productData.map((item) => (
             <ProductCard
               title={item.title}
@@ -56,7 +56,7 @@ export const PreFooter = () => {
 
 const ProductCard = ({ title, desc, icon, url, urlLabel }) => {
   return (
-    <div className="bg-transparent pt-[3.375rem] px-11 pb-7 flex flex-col justify-between flex-1 border-2 border-[#E0C7F9] rounded-2xl gap-10">
+    <div className="bg-white pt-[3.375rem] px-11 pb-7 flex flex-col justify-between flex-1 rounded-2xl gap-10">
       <div>
         <div className="w-16 h-16 mb-6">
           <img src={icon} alt="icon" className="w-full h-full" />
