@@ -99,24 +99,32 @@ export const Header = () => {
                 Navigation
               </h3>
               <ul className="flex flex-col gap-1 items-start">
-                <Link to="/" className={mobileMenuStyle}>
+                <Link
+                  to="/"
+                  className={mobileMenuStyle}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   Home
                 </Link>
                 <Anchor
                   url="https://angel.co/company/socket-tech/jobs"
                   classNames={mobileMenuStyle}
-                  onClick={toggleMenu}
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Careers
                 </Anchor>
                 <Anchor
                   url="https://docs.socket.tech"
                   classNames={mobileMenuStyle}
-                  onClick={toggleMenu}
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Docs
                 </Anchor>
-                <Link to="/team" className={mobileMenuStyle}>
+                <Link
+                  to="/team"
+                  className={mobileMenuStyle}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   Team
                 </Link>
               </ul>
@@ -131,6 +139,7 @@ export const Header = () => {
                     url={item.url}
                     classNames={mobileMenuStyle}
                     key={index}
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.title}
                   </Anchor>
@@ -178,7 +187,7 @@ const Anchor = ({ children, url, classNames, onClick }) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      onClick={onClick ?? null}
+      onClick={onClick}
       className={classNames}
     >
       {children}

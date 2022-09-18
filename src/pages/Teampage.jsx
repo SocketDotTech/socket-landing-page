@@ -43,6 +43,12 @@ const teamData = [
     imgUrl: varun,
   },
   {
+    name: "Driuds Murphy",
+    designation: "Head of Design",
+    twitter: null,
+    imgUrl: varun
+  },
+  {
     name: "Sriram Vasudevan",
     designation: "Head of Strategy & Marketing",
     twitter: "sriramvas",
@@ -86,6 +92,7 @@ const teamData = [
     name: "Ananya Agrawal",
     designation: "Backend Engineer",
     imgUrl: ananya,
+    twitter: "AgrawalAnanyaa"
   },
   {
     name: "Devain Pal Bansal",
@@ -97,6 +104,7 @@ const teamData = [
     name: "Apurva Mishra",
     designation: "Marketing & Operations",
     imgUrl: apurva,
+    twitter: "apmishra0398"
   },
   {
     name: "Absolute",

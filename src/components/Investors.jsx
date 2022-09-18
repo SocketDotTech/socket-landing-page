@@ -80,7 +80,7 @@ const angel = [
   },
   {
     name: "Jinglan Wan",
-    role: "Co-Founder & CEO, Optimism",
+    role: "Co-Founder, Optimism",
     url: "https://twitter.com/jinglejamOP",
   },
   {
@@ -125,6 +125,15 @@ export const Investors = () => {
           {investors.map((item, index) => (
             <InvestorLogo logo={item.img} url={item.url} key={index} />
           ))}
+
+          {angel.map((item, index) => (
+            <AngelInvestor
+              url={item.url}
+              investor={item.name}
+              designation={item.role}
+              key={`angel-${index}`}
+            />
+          ))}
         </div>
       </div>
     </div>
@@ -135,6 +144,24 @@ const InvestorLogo = ({ logo, url }) => {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
       <img src={logo} className="h-[4.625rem]" />
+    </a>
+  );
+};
+
+const AngelInvestor = ({ url, investor, designation }) => {
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex flex-col items-center justify-center h-[4.625rem]"
+    >
+      <span className="text-center text-lg md:text-xl font-bold text-socket-gray-90">
+        {investor}
+      </span>
+      <span className="text-center text-sm font-medium text-socket-gray-70">
+        {designation}
+      </span>
     </a>
   );
 };
