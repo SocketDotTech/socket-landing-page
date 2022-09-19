@@ -8,68 +8,64 @@ import egirl from "../assets/investors/new/egirl.svg";
 import folius from "../assets/investors/new/folius.svg";
 import maven11 from "../assets/investors/new/maven11.svg";
 import frc from "../assets/investors/new/4rc.svg";
+import mark from "../assets/investors/new/mark.svg";
 
 const investors = [
   {
     img: framework,
     name: "Framework",
     url: "https://framework.ventures/",
-    height: "26px",
   },
   {
     img: nascent,
     name: "Nascent",
     url: "https://www.nascent.xyz/",
-    height: "40px",
   },
   {
     img: geometry,
     name: "Geometry",
     url: "https://www.geometrydao.xyz/",
-    height: "40px",
   },
   {
     img: coinbase,
     name: "Coinbase",
     url: "https://www.coinbase.com/",
-    height: "36px",
   },
   {
     img: maven11,
     name: "Maven11",
     url: "https://www.maven11.com/",
-    height: "19px",
   },
   {
     img: archetype,
     name: "Archetype",
     url: "https://www.archetype.fund/",
-    height: "33px",
   },
   {
     img: lightspeed,
     name: "Lightspeed",
     url: "https://lsvp.com/",
-    height: "53px",
   },
   {
     img: egirl,
     name: "EGirl",
     url: "https://www.egirlcapital.com/",
-    height: "33px",
   },
   {
     img: folius,
     name: "Folius",
     url: "https://www.folius.ventures/",
-    height: "40px",
   },
   {
     img: frc,
     name: "FRC",
     url: "https://www.fourthrevolution.capital/",
-    height: "30px",
   },
+  {
+    img: mark,
+    name: 'Mark Cuban Companies',
+    url: "https://markcubancompanies.com/",
+  }
 ];
 
 const angel = [
@@ -107,6 +103,11 @@ const angel = [
     name: "Jaynti Kanani",
     role: "Co-Founder, Polygon",
     url: "https://twitter.com/_jdkanani",
+  },
+  {
+    name: "Seb Audet",
+    role: "Co-Founder, Zapper.fi",
+    url: "https://twitter.com/sebaudet26"
   },
   {
     name: "40+ kickass backers",

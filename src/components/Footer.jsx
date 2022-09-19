@@ -1,3 +1,6 @@
+import Twitter from "../assets/icons/twitter.svg";
+import Discord from "../assets/icons/discord.svg";
+import OCLove from "../assets/icons/oc-love.svg";
 import socketLogo from "../assets/socket-logo-black.svg";
 
 const navItmes = {
@@ -8,7 +11,7 @@ const navItmes = {
     },
     {
       title: "Refuel",
-      url: "https://www.bungee.exchange/refuel",
+      url: "https://bungee.exchange/refuel",
     },
   ],
   resources: [
@@ -43,8 +46,16 @@ export const Footer = () => {
     <div className="bg-white pt-[3.375rem]">
       <div className="socket-container mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 pb-12 lg:px-[5.6875rem]">
-          <div>
+          <div className="flex flex-col justify-between items-start">
             <img src={socketLogo} />
+            {/* <div className="flex">
+              <a href="https://twitter.com/SocketDotTech" target="_blank" rel="noopener noreferrer">
+                <img src={Twitter} />
+              </a>
+              <a href="https://discord.gg/zfKJR8yWaH" target="_blank" rel="noopener noreferrer">
+              <img src={Discord} />
+              </a>
+            </div> */}
           </div>
           <div>
             <NavTitle>Products</NavTitle>
@@ -73,13 +84,19 @@ export const Footer = () => {
         </div>
 
         {/* bottom bar */}
-        {/* <div className="py-7 border-t border-black/[0.07] flex justify-between items-center">
-          <p className="text-lg font-medium text-black/80">
-            Partnership contact:{" "}
-            <a href="mailto:sales@socket.tech">sales@socket.tech</a>
+        <div className="py-7 border-t border-black/[0.07] flex justify-between items-center lg:px-[5.6875rem]">
+          <p className="font-medium text-black/80 flex items-center">
+            Made with <img src={OCLove} className="w-5 h-5 mx-1.5"/> by the OCs
           </p>
-          <div></div>
-        </div> */}
+          <div className="flex gap-5">
+              <a href="https://twitter.com/SocketDotTech" target="_blank" rel="noopener noreferrer">
+                <img src={Twitter} className="w-7"/>
+              </a>
+              <a href="https://discord.gg/zfKJR8yWaH" target="_blank" rel="noopener noreferrer">
+              <img src={Discord} className="w-7"/>
+              </a>
+            </div>
+        </div>
       </div>
     </div>
   );

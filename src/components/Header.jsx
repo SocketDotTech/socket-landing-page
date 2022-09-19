@@ -58,18 +58,18 @@ export const Header = () => {
         <Link className={linkStyle} to="/">
           Home
         </Link>
-        <Anchor
-          url="https://angel.co/company/socket-tech/jobs"
-          classNames={linkStyle}
-        >
-          Careers
-        </Anchor>
         <Anchor url="https://docs.socket.tech" classNames={linkStyle}>
           Docs
         </Anchor>
         <Link className={linkStyle} to="team">
           Team
         </Link>
+        <Anchor
+          url="https://angel.co/company/socket-tech/jobs"
+          classNames={linkStyle}
+        >
+          Careers
+        </Anchor>
       </div>
 
       <div className="hidden flex-1 lg:flex justify-end items-center">
@@ -91,8 +91,8 @@ export const Header = () => {
       {/* MOBILE MENU */}
       {isMobileMenuOpen && (
         <div
-          className="bg-white p-5 shadow-xl fixed top-3 left-3 rounded-lg"
-          style={{ width: "calc(100% - 24px)" }}
+          className="bg-white p-5 shadow-xl fixed top-3 right-3 rounded-lg w-1/2"
+          // style={{ width: "calc(100% - 24px)" }}
         >
           <div className="flex">
             <div className="flex flex-col flex-1">
@@ -108,13 +108,6 @@ export const Header = () => {
                   Home
                 </Link>
                 <Anchor
-                  url="https://angel.co/company/socket-tech/jobs"
-                  classNames={mobileMenuStyle}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Careers
-                </Anchor>
-                <Anchor
                   url="https://docs.socket.tech"
                   classNames={mobileMenuStyle}
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -128,9 +121,16 @@ export const Header = () => {
                 >
                   Team
                 </Link>
+                <Anchor
+                  url="https://angel.co/company/socket-tech/jobs"
+                  classNames={mobileMenuStyle}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Careers
+                </Anchor>
               </ul>
             </div>
-            <div className="flex flex-col flex-1">
+            {/* <div className="flex flex-col flex-1">
               <h3 className="text-socket-gray-70 font-bold uppercase mb-2">
                 Resources
               </h3>
@@ -146,7 +146,7 @@ export const Header = () => {
                   </Anchor>
                 ))}
               </ul>
-            </div>
+            </div> */}
           </div>
 
           {/* Bungee CTA */}

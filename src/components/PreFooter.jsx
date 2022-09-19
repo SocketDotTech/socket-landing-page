@@ -7,21 +7,21 @@ import switchIcon from "../assets/icons/switch.svg";
 const productData = [
   {
     title: "Socket SDK",
-    desc: "Send, track and claim arbitrary cross-chain messages using our frame-agnostic SDKs.",
+    desc: "Quickly and easily integrate Socket into your decentralized application with the Socket SDK",
     url: "https://socketdottech.github.io/socket-v2-sdk-docs/",
     icon: rotateIcon,
     urlLabel: "Read the Docs",
   },
   {
     title: "Socket API",
-    desc: "Enable seamless cross-chain swaps in your app or protocol with our tested API.",
+    desc: "Enable seamless cross-chain swaps in your app with the Socket APIs",
     url: "https://docs.socket.tech/socket-api/introduction",
     icon: gearIcon,
     urlLabel: "Read the Docs",
   },
   {
     title: "Socket Plugin",
-    desc: "Build a customized bridge tailored to your needs with just a few lines of code.",
+    desc: "Integrate a fully customizable bridge directly into your apps with just a few lines of code",
     url: "https://sockettech.notion.site/Socket-Widget-Docs-b905871870e343c6833169ebbd356790",
     icon: switchIcon,
     urlLabel: "Read the Docs",
@@ -35,7 +35,7 @@ export const PreFooter = () => {
         <h2 className="heading-2 text-center">Start building today</h2>
         <p className="supportive-text text-center mt-2 mb-9">
           Get started building with Socket and take your apps cross-chain in as
-          little as 20 mins
+          little as 20 minutes
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-9 lg:px-[5.6875rem]">
           {productData.map((item) => (

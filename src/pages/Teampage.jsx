@@ -38,16 +38,16 @@ const teamData = [
     imgUrl: arth,
   },
   {
-    name: "Varun",
+    name: "Varun Bhalla",
     designation: "Product Manager",
     twitter: null,
     imgUrl: varun,
   },
   {
-    name: "Driuds Murphy",
+    name: "Murphy",
     designation: "Head of Design",
     twitter: null,
-    imgUrl: murphy
+    imgUrl: murphy,
   },
   {
     name: "Sriram Vasudevan",
@@ -93,7 +93,7 @@ const teamData = [
     name: "Ananya Agrawal",
     designation: "Backend Engineer",
     imgUrl: ananya,
-    twitter: "AgrawalAnanyaa"
+    twitter: "AgrawalAnanyaa",
   },
   {
     name: "Devain Pal Bansal",
@@ -105,7 +105,7 @@ const teamData = [
     name: "Apurva Mishra",
     designation: "Marketing & Operations",
     imgUrl: apurva,
-    twitter: "apmishra0398"
+    twitter: "apmishra0398",
   },
   {
     name: "Absolute",
@@ -125,9 +125,8 @@ export const Teampage = () => {
               Hi. We're Socket.
             </h1>
             <p className="text-white font-medium text-lg max-w-[644px] text-center">
-              We're building a product ecosystem that will help humanity create
-              advanced virtual economies through the power of blockchain
-              technology.
+              A diverse distributed team of super coders and cross-chain
+              ethusiasts
             </p>
             <div className="flex gap-3">
               <Button
@@ -145,10 +144,10 @@ export const Teampage = () => {
       <div className="bg-white pt-[3.125rem] pb-[3.125rem] md:pb-[6.25rem]">
         <div className="socket-container mx-auto">
           <h2 className="heading-2 text-center">Meet the Team</h2>
-          <p className="supportive-text text-center mt-1">
+          {/* <p className="supportive-text text-center mt-1">
             A diverse distributed team of super coders and cross-chain
             ethusiasts
-          </p>
+          </p> */}
 
           <div className="mt-8 flex flex-wrap">
             {teamData.map((mate) => (
@@ -171,7 +170,11 @@ export const TeamMate = (props) => {
   const { name, designation, imgUrl, twitterUrl } = props;
   return (
     <div className="w-1/2 md:w-1/3 lg:w-1/5 p-4">
-      <a href={twitterUrl ? `https://twitter.com/${twitterUrl}`: null} target="_blank" rel="noopener noreferrer">
+      <a
+        href={twitterUrl ? `https://twitter.com/${twitterUrl}` : null}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div className="w-full pb-[110%] mb-[15px] relative hover:grayscale-0 grayscale">
           <img
             src={imgUrl}

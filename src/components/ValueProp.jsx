@@ -5,12 +5,12 @@ import transferIcon from "../assets/icons/transfer-arrow.svg";
 const valuePropData = [
   {
     title: "Easy to Develop On",
-    desc: "We're obsessed with ensuring a great developer experience. Choose between the Socket APIs or the SDK, and take your app cross-chain in 20 mins.",
+    desc: "We're obsessed with ensuring a great developer experience. Choose between the Socket APIs or the SDK, and take your app cross-chain in 20 minutes",
     icon: gearIcon,
   },
   {
     title: "True Composibility",
-    desc: "Connect different protocols on different layers together, compose with any protocol on any-chain, no limits.",
+    desc: "Connect different protocols on different layers together, compose with any protocol on any-chain, no limits",
     icon: msgIcon,
   },
   {
