@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const linkStyle =
   "text-white hover:text-white/80 cursor-pointer transition-all text-lg font-bold";
 
-const mobileMenuStyle = "text-socket-gray-90 font-medium";
+const mobileMenuStyle = "text-socket-gray-90 font-medium text-center text-lg my-1.5";
 const resources = [
   {
     title: "Socket API docs",
@@ -91,15 +91,15 @@ export const Header = () => {
       {/* MOBILE MENU */}
       {isMobileMenuOpen && (
         <div
-          className="bg-white p-5 shadow-xl fixed top-3 right-3 rounded-lg w-1/2"
-          // style={{ width: "calc(100% - 24px)" }}
+          className="bg-white p-5 shadow-xl fixed top-3 right-3 rounded-lg"
+          style={{ width: "calc(100% - 24px)" }}
         >
           <div className="flex">
             <div className="flex flex-col flex-1">
-              <h3 className="text-socket-gray-70 font-bold uppercase mb-2">
+              {/* <h3 className="text-socket-gray-70 font-bold uppercase mb-2">
                 Navigation
-              </h3>
-              <ul className="flex flex-col gap-1 items-start">
+              </h3> */}
+              <ul className="flex flex-col items-center">
                 <Link
                   to="/"
                   className={mobileMenuStyle}
@@ -154,7 +154,7 @@ export const Header = () => {
             href="https://bungee.exchange/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-socket-theme text-white font-bold py-4 rounded-lg flex items-center justify-center mt-7"
+            className="bg-socket-theme text-white font-bold py-4 rounded-lg flex items-center justify-center mt-4"
           >
             Try Bungee
           </a>

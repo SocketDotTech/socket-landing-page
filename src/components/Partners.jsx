@@ -172,7 +172,7 @@ export const Partners = () => {
           <p className="supporting-text text-center mt-2">
             More than 30 apps are getting plugged into Socket as you read this
           </p>
-          <div className="flex flex-wrap gap-4 md:gap-[13px] mt-10 justify-center">
+          <div className="flex flex-wrap mt-10 justify-center">
             {partners.map((item) => (
               <IconFilledTab
                 name={item.name}
@@ -194,7 +194,7 @@ const IconFilledTab = ({ name, icon, iconFilled }) => {
   const [hover, setHover] = useState(false);
   return (
     <div
-      className="py-1 md:py-1.5 px-1 md:px-[1.125rem] bg-white flex gap-1.5 md:gap-3 items-center"
+      className="m-2 md:m-[6.5px] py-1 md:py-1.5 px-1 md:px-[1.125rem] bg-white flex gap-1.5 md:gap-3 items-center"
       // onMouseOver={() => setHover(true)}
       // onMouseOut={() => setHover(false)}
     >
