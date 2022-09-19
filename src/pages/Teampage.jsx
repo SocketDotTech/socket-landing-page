@@ -16,6 +16,7 @@ import absolute from "../assets/team/absolute.png";
 import sriram from "../assets/team/sriram.jpg";
 import apurva from "../assets/team/apurva.png";
 import vishnu from "../assets/team/vishnu.jpg";
+import murphy from "../assets/team/murphy.jpg";
 
 const teamData = [
   {
@@ -46,7 +47,7 @@ const teamData = [
     name: "Driuds Murphy",
     designation: "Head of Design",
     twitter: null,
-    imgUrl: varun
+    imgUrl: murphy
   },
   {
     name: "Sriram Vasudevan",

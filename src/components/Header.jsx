@@ -78,6 +78,7 @@ export const Header = () => {
           url="https://bungee.exchange/"
           bgColor="bg-socket-gray-100"
           textColor="text-white"
+          external
         >
           Try Bungee
         </Button>
