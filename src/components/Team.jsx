@@ -94,7 +94,7 @@ export const Team = () => {
       >
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-l from-transparent to-[#17171F]"></div>
       </div>
-      <div className="container mx-auto mb-14 relative">
+      <div className="socket-container mx-auto mb-14 relative">
         <h2 className="text-white text-2xl md:text-5xl font-bold text-center mb-4">
           Our team
         </h2>
@@ -102,7 +102,7 @@ export const Team = () => {
           super coders and cross chain enthusiasts
         </p>
       </div>
-      <div className="container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 relative">
+      <div className="socket-container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 relative">
         {teamList.map((member, index) => {
           return <Person key={index} data={member} />;
         })}
