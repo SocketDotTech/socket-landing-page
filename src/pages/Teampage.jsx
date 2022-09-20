@@ -126,7 +126,7 @@ export const Teampage = () => {
             </h1>
             <p className="text-white font-medium text-lg max-w-[644px] text-center">
               A diverse distributed team of super coders and cross-chain
-              ethusiasts
+              enthusiasts
             </p>
             <div className="flex gap-3">
               <Button
@@ -144,10 +144,6 @@ export const Teampage = () => {
       <div className="bg-white pt-[3.125rem] pb-[3.125rem] md:pb-[6.25rem]">
         <div className="socket-container mx-auto">
           <h2 className="heading-2 text-center">Meet the Team</h2>
-          {/* <p className="supportive-text text-center mt-1">
-            A diverse distributed team of super coders and cross-chain
-            ethusiasts
-          </p> */}
 
           <div className="mt-8 flex flex-wrap">
             {teamData.map((mate) => (

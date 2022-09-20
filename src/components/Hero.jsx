@@ -11,7 +11,7 @@ export const Hero = () => {
           </h1>
           <p className="text-white md:font-medium md:text-lg max-w-[644px] text-center">
             Socket is a complete interoperability stack which allows asset &amp;
-            data transfers across chains, enabling developers to build truly
+            data transfer across chains, enabling developers to build truly
             cross-chain apps
           </p>
           <div className="flex gap-3">

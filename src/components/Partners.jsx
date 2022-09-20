@@ -170,7 +170,7 @@ export const Partners = () => {
         <div className="rounded-[20px] md:rounded-[32px] overlay-bg mx-auto py-7 px-3 md:pt-14 md:pb-8 md:px-11 relative">
           <h2 className="heading-2 text-center">Powering the Best</h2>
           <p className="supporting-text text-center mt-2">
-            More than 30 apps are getting plugged into Socket as you read this
+            More than 30 apps are getting plugged in to Socket as you read this
           </p>
           <div className="flex flex-wrap mt-10 justify-center">
             {partners.map((item) => (
