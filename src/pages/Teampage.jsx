@@ -131,7 +131,7 @@ export const Teampage = () => {
             <div className="flex gap-3">
               <Button
                 type="link"
-                url="https://docs.socket.tech/"
+                url="https://angel.co/company/socket-tech"
                 external
                 bgColor="bg-socket-gray-100"
               >
