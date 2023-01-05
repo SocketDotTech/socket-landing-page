@@ -14,7 +14,6 @@ export const Homepage = () => {
       <ValueProp />
       <Stats />
       <Investors />
-      {/* <SocialSection /> */}
       <Bungee />
       <PreFooter />
     </div>
