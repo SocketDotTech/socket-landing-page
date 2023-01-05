@@ -4,6 +4,8 @@ import { Teampage } from "./pages/Teampage";
 import { Footer } from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
+import ReactGA from 'react-ga';
+ReactGA.initialize(process.env.REACT_APP_GA_ID);
 
 function App() {
   return (
