@@ -8,15 +8,15 @@ import varun from "../assets/team/varun.jpg";
 import vamsi from "../assets/team/vamsi.jpg";
 import aniket from "../assets/team/aniket.jpg";
 import salil from "../assets/team/salil.png";
-import ananya from "../assets/team/ananya.jpg";
 import shrey from "../assets/team/shrey.jpg";
 import ameesha from "../assets/team/ameesha.jpg";
 import dpb from "../assets/team/dpb.jpg";
-import absolute from "../assets/team/absolute.png";
 import sriram from "../assets/team/sriram.jpg";
 import apurva from "../assets/team/apurva.png";
 import vishnu from "../assets/team/vishnu.jpg";
 import murphy from "../assets/team/murphy.jpg";
+import ankita from "../assets/team/ankita.jpg";
+import kanth from "../assets/team/kanth.jpg";
 
 const teamData = [
   {
@@ -56,6 +56,11 @@ const teamData = [
     imgUrl: sriram,
   },
   {
+    name: "Ankita Kumari",
+    designation: "Head of People Operation",
+    imgUrl: ankita,
+  },
+  {
     name: "Vamsi Reddy",
     designation: "Senior Blockchain Engineer",
     twitter: "reddyismav",
@@ -84,16 +89,15 @@ const teamData = [
     imgUrl: vishnu,
   },
   {
+    name: "Lakshmi Kanth",
+    designation: "Backend Developer",
+    imgUrl: kanth,
+  },
+  {
     name: "Shrey Keny",
     designation: "Engineer, Dev-Rel, Documaster",
     twitter: "ShreyKeny",
     imgUrl: shrey,
-  },
-  {
-    name: "Ananya Agrawal",
-    designation: "Backend Engineer",
-    imgUrl: ananya,
-    twitter: "AgrawalAnanyaa",
   },
   {
     name: "Devain Pal Bansal",
@@ -106,12 +110,6 @@ const teamData = [
     designation: "Marketing & Operations",
     imgUrl: apurva,
     twitter: "apmishra0398",
-  },
-  {
-    name: "Absolute",
-    designation: "Community",
-    twitter: "AbsoluteUknit",
-    imgUrl: absolute,
   },
 ];
 
