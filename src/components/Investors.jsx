@@ -24,7 +24,7 @@ const investors = [
   {
     img: geometry,
     name: "Geometry",
-    url: "https://www.geometrydao.xyz/",
+    url: "https://www.geometry.xyz/",
   },
   {
     img: coinbase,
