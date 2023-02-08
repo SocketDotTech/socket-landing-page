@@ -9,7 +9,7 @@ export const Stats = () => {
         <div className="lg:px-[4.375rem] flex flex-col md:flex-row justify-evenly overlay-bg pt-10 md:pt-14 pb-12 mt-[1.375rem] lg:mx-[4.625rem] gap-10 md:gap-0">
           <div>
             <Stat>
-              <span className="text-socket-gray-40">$</span>2B$+
+              <span className="text-socket-gray-40">$</span>2B+
             </Stat>
             <StatLabel>Volume Transferred</StatLabel>
           </div>
