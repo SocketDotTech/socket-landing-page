@@ -17,6 +17,9 @@ import vishnu from "../assets/team/vishnu.jpg";
 import murphy from "../assets/team/murphy.jpg";
 import ankita from "../assets/team/ankita.jpg";
 import lito from "../assets/team/lito.png";
+import aditya from "../assets/team/aditya.jpeg";
+import tayler from "../assets/team/tayler.png";
+import akash from "../assets/team/akash.png";
 
 const teamData = [
   {
@@ -101,6 +104,11 @@ const teamData = [
     imgUrl: shrey,
   },
   {
+    name: "Akash Kumar",
+    designation: "Backend Engineer",
+    imgUrl: akash,
+  },
+  {
     name: "Devain Pal Bansal",
     designation: "Researcher / Information Architect",
     twitter: "dpbmaverick98",
@@ -111,6 +119,18 @@ const teamData = [
     designation: "Marketing & Operations",
     imgUrl: apurva,
     twitter: "apmishra0398",
+  },
+  {
+    name: "Aditya Kalsaria",
+    designation: "Visual Designer",
+    imgUrl: aditya,
+    twitter: "AdityaKalsaria",
+  },
+  {
+    name: "Tayler Melvin",
+    designation: "Team Hospitality Lead",
+    imgUrl: tayler,
+    twitter: "tayler_melvin",
   },
 ];
 
