@@ -1,5 +1,5 @@
 import { Button } from "./Button";
-import heroFallback from "../assets/hero-img.svg";
+import heroFallback from "../assets/hero-img-upd.svg";
 
 export const Hero = () => {
   return (
@@ -7,7 +7,7 @@ export const Hero = () => {
       <div className="socket-container mx-auto">
         <div className="flex flex-col gap-3 items-center">
           <h1 className="text-white text-4xl md:text-[3.5rem] font-bold text-center max-w-[645px] mx-auto md:leading-[63.84px]">
-            Powering Cross-Chain Connectivity
+            Powering Cross Chain Connectivity
           </h1>
           <p className="text-white md:font-medium md:text-lg max-w-[644px] text-center">
             Socket is an interoperability protocol which powers seamless asset &

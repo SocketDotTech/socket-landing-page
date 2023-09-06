@@ -16,6 +16,7 @@ import apurva from "../assets/team/apurva.png";
 import vishnu from "../assets/team/vishnu.jpg";
 import murphy from "../assets/team/murphy.jpg";
 import ankita from "../assets/team/ankita.jpg";
+import lito from "../assets/team/lito.png";
 
 const teamData = [
   {
@@ -47,6 +48,12 @@ const teamData = [
     designation: "Head of Design",
     twitter: null,
     imgUrl: murphy,
+  },
+  {
+    name: "Lito",
+    designation: "Growth & BD",
+    twitter: "litocoen",
+    imgUrl: lito,
   },
   {
     name: "Sriram Vasudevan",

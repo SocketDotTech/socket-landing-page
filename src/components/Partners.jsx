@@ -50,27 +50,27 @@ import orangeIconFilled from "../assets/partners/colored/orange.svg";
 import ambireIconFilled from "../assets/partners/colored/ambire.svg";
 import metamaskIconFilled from "../assets/partners/colored/metamask.svg";
 import coinbaseIconFilled from "../assets/partners/colored/coinbase.svg";
-import rainbowIconFilled from "../assets/partners/colored/rainbow.svg"
-import aevoIconFilled from "../assets/partners/colored/aevo.svg"
+import rainbowIconFilled from "../assets/partners/colored/rainbow.svg";
+import aevoIconFilled from "../assets/partners/colored/aevo.svg";
 import slingshotIconFilled from "../assets/partners/colored/slingshot.svg";
 import xdefiIconFilled from "../assets/partners/colored/xdefi.svg";
 import instadappIconFilled from "../assets/partners/colored/instadapp.svg";
 import gmxIconFilled from "../assets/partners/colored/gmx.svg";
-import lyraIconFilled from '../assets/partners/colored/lyra.svg';
-import kwentaIconFilled from "../assets/partners/colored/kwenta.svg"
-import bungeeIconFilled from "../assets/partners/colored/bungee.svg"
-import riskHarborIconFilled from "../assets/partners/colored/riskharbor.svg"
-import superformIconFilled from "../assets/partners/colored/superform.svg"
-import alignsideIconFilled from "../assets/partners/colored/alongside.svg"
-import jonesDaoIconFilled from "../assets/partners/colored/jones.svg"
-import goal3IconFilled from "../assets/partners/colored/goal3.svg"
-import omniIconFilled from "../assets/partners/colored/omni.svg"
-import zealIconFilled from "../assets/partners/colored/zeal.svg"
-import decentIconFilled from "../assets/partners/colored/decent.svg"
-import suberraIconFilled from "../assets/partners/colored/suberra.svg"
-import dxDaoIconFilled from "../assets/partners/colored/dxdao.svg"
-import levelIconFilled from "../assets/partners/colored/level.svg"
-import thalesIconFilled from "../assets/partners/colored/thales.svg"
+import lyraIconFilled from "../assets/partners/colored/lyra.svg";
+import kwentaIconFilled from "../assets/partners/colored/kwenta.svg";
+import bungeeIconFilled from "../assets/partners/colored/bungee.svg";
+import riskHarborIconFilled from "../assets/partners/colored/riskharbor.svg";
+import superformIconFilled from "../assets/partners/colored/superform.svg";
+import alignsideIconFilled from "../assets/partners/colored/alongside.svg";
+import jonesDaoIconFilled from "../assets/partners/colored/jones.svg";
+import goal3IconFilled from "../assets/partners/colored/goal3.svg";
+import omniIconFilled from "../assets/partners/colored/omni.svg";
+import zealIconFilled from "../assets/partners/colored/zeal.svg";
+import decentIconFilled from "../assets/partners/colored/decent.svg";
+import suberraIconFilled from "../assets/partners/colored/suberra.svg";
+import dxDaoIconFilled from "../assets/partners/colored/dxdao.svg";
+import levelIconFilled from "../assets/partners/colored/level.svg";
+import thalesIconFilled from "../assets/partners/colored/thales.svg";
 
 const partners = [
   {
@@ -306,9 +306,12 @@ export const Partners = () => {
     <div className="bg-white pt-16 pb-8">
       <div className="socket-container mx-auto">
         <div className="rounded-[20px] md:rounded-[32px] overlay-bg mx-auto py-7 px-3 md:pt-14 md:pb-8 md:px-11 relative">
-          <h2 className="heading-2 text-center">Powering the Best</h2>
+          <h2 className="heading-2 text-center">
+            Taking the World Cross Chain
+          </h2>
           <p className="supporting-text text-center mt-2">
-            More than 30 apps are getting plugged in to Socket as you read this
+            Socket powers interoperability for the biggest wallets and
+            decentralised protocols in the space
           </p>
           <div className="flex flex-wrap mt-10 justify-center">
             {partners.map((item) => (
@@ -319,9 +322,18 @@ export const Partners = () => {
                 // iconFilled={item.iconFilled}
               />
             ))}
+
+            <div className="m-2 md:m-[6.5px] py-1 md:py-1.5 px-1 md:px-[1.125rem] bg-white flex gap-1.5 md:gap-3 items-center">
+              <p className="text-socket-gray-80 font-extrabold text-sm md:text-base">
+                + more
+              </p>
+            </div>
           </div>
 
-          <img src={thunder} className="hidden lg:block absolute top-9 right-20" />
+          <img
+            src={thunder}
+            className="hidden lg:block absolute top-9 right-20"
+          />
         </div>
       </div>
     </div>
@@ -339,7 +351,9 @@ const IconFilledTab = ({ name, icon }) => {
       <div className="border border-black/[0.02] rounded-[6.5px] h-[2rem] w-[2rem] md:h-[2.375rem] md:w-[2.375rem] flex items-center justify-center">
         <img src={icon} />
       </div>
-      <p className="text-socket-gray-80 font-extrabold text-sm md:text-base">{name}</p>
+      <p className="text-socket-gray-80 font-extrabold text-sm md:text-base">
+        {name}
+      </p>
     </div>
   );
 };

@@ -1,10 +1,9 @@
 export const Stats = () => {
   return (
-    <div className="pt-[4.5rem] pb-[3.875rem] pb- bg-white">
+    <div className="pt-[4.5rem] pb-9 pb- bg-white">
       <div className="socket-container mx-auto">
         <h2 className="heading-2 text-center">
-          Trusted by the Best{" "}
-          <span className="text-socket-theme">Wallets and dApps</span>
+          Hub for Cross Chain Activity
         </h2>
         <div className="lg:px-[4.375rem] flex flex-col md:flex-row justify-evenly overlay-bg pt-10 md:pt-14 pb-12 mt-[1.375rem] lg:mx-[4.625rem] gap-10 md:gap-0">
           <div>
