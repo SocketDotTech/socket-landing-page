@@ -4,19 +4,19 @@ import transferIcon from "../assets/icons/transfer-arrow.svg";
 
 const valuePropData = [
   {
-    title: "Easy to Develop On",
-    desc: "We're obsessed with ensuring a great developer experience. Choose between the Socket APIs or the SDK, and take your app cross-chain in 20 minutes",
-    icon: gearIcon,
+    title: "Efficient Value Transfer",
+    desc: "Plug in to limitless liquidity available across chains and optimise for the parameters you care about - high outputs, low latency or trust minimisation.",
+    icon: transferIcon,
   },
   {
-    title: "True Composibility",
-    desc: "Connect different protocols on different layers together, compose with any protocol on any-chain, no limits",
+    title: "True Composability",
+    desc: "Seamlessly connect your app on different layers with our messaging stack. Go beyond by composing with any protocol on any-chain, no limits.",
     icon: msgIcon,
   },
   {
-    title: "Efficient Value Transfer",
-    desc: "Plug in to the biggest bridges and DEXs across chains and optimise for the parameters you care about, high outputs, low latency or trust minimisation",
-    icon: transferIcon,
+    title: "Easy to Develop On",
+    desc: "We're obsessed with ensuring a great developer experience. Choose between the Socket APIs or the SDK, and take your app cross-chain in 20 minutes.",
+    icon: gearIcon,
   },
 ];
 

@@ -16,7 +16,10 @@ import apurva from "../assets/team/apurva.png";
 import vishnu from "../assets/team/vishnu.jpg";
 import murphy from "../assets/team/murphy.jpg";
 import ankita from "../assets/team/ankita.jpg";
-import kanth from "../assets/team/kanth.jpg";
+import lito from "../assets/team/lito.png";
+import aditya from "../assets/team/aditya.jpeg";
+import tayler from "../assets/team/tayler.png";
+import akash from "../assets/team/akash.png";
 
 const teamData = [
   {
@@ -48,6 +51,12 @@ const teamData = [
     designation: "Head of Design",
     twitter: null,
     imgUrl: murphy,
+  },
+  {
+    name: "Lito",
+    designation: "Growth & BD",
+    twitter: "litocoen",
+    imgUrl: lito,
   },
   {
     name: "Sriram Vasudevan",
@@ -89,15 +98,15 @@ const teamData = [
     imgUrl: vishnu,
   },
   {
-    name: "Lakshmi Kanth",
-    designation: "Backend Developer",
-    imgUrl: kanth,
-  },
-  {
     name: "Shrey Keny",
     designation: "Engineer, Dev-Rel, Documaster",
     twitter: "ShreyKeny",
     imgUrl: shrey,
+  },
+  {
+    name: "Akash Kumar",
+    designation: "Backend Engineer",
+    imgUrl: akash,
   },
   {
     name: "Devain Pal Bansal",
@@ -110,6 +119,18 @@ const teamData = [
     designation: "Marketing & Operations",
     imgUrl: apurva,
     twitter: "apmishra0398",
+  },
+  {
+    name: "Aditya Kalsaria",
+    designation: "Visual Designer",
+    imgUrl: aditya,
+    twitter: "AdityaKalsaria",
+  },
+  {
+    name: "Tayler Melvin",
+    designation: "Team Hospitality Lead",
+    imgUrl: tayler,
+    twitter: "tayler_melvin",
   },
 ];
 

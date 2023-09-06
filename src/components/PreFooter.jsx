@@ -7,21 +7,21 @@ import switchIcon from "../assets/icons/switch.svg";
 const productData = [
   {
     title: "Socket SDK",
-    desc: "Quickly and easily integrate Socket into your decentralized application with the Socket SDK",
+    desc: "Quickly and easily integrate Socket into your decentralized application with the Socket SDK.",
     url: "https://socketdottech.github.io/socket-v2-sdk-docs/",
     icon: rotateIcon,
     urlLabel: "Read the Docs",
   },
   {
     title: "Socket API",
-    desc: "Enable seamless cross-chain swaps in your app with the Socket APIs",
+    desc: "Enable seamless cross-chain swaps in your app with the Socket APIs.",
     url: "https://docs.socket.tech/socket-api/introduction",
     icon: gearIcon,
     urlLabel: "Read the Docs",
   },
   {
     title: "Socket Plugin",
-    desc: "Integrate a fully customizable bridge directly into your apps with just a few lines of code",
+    desc: "Integrate a fully customizable bridge directly into your apps with just a few lines of code.",
     url: "https://sockettech.notion.site/Socket-Widget-Docs-b905871870e343c6833169ebbd356790",
     icon: switchIcon,
     urlLabel: "Read the Docs",

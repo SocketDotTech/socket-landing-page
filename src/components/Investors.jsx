@@ -1,7 +1,7 @@
-import framework from "../assets/investors/new/framework.svg";
+import framework from "../assets/investors/new/framework-upd-formatted.svg";
 import nascent from "../assets/investors/new/nascent.svg";
 import geometry from "../assets/investors/new/geometry.svg";
-import coinbase from "../assets/investors/new/coinbase.svg";
+import coinbase from "../assets/investors/new/coinbase-upd-formatted.svg";
 import archetype from "../assets/investors/new/archetype.svg";
 import lightspeed from "../assets/investors/new/lightspeed.svg";
 import egirl from "../assets/investors/new/egirl.svg";
@@ -10,11 +10,24 @@ import maven11 from "../assets/investors/new/maven11.svg";
 import frc from "../assets/investors/new/4rc.svg";
 import mark from "../assets/investors/new/mark.svg";
 
-const investors = [
+const majorInvestors = [
+  {
+    img: coinbase,
+    name: "Coinbase",
+    url: "https://www.coinbase.com/",
+  },
   {
     img: framework,
     name: "Framework",
     url: "https://framework.ventures/",
+  },
+];
+
+const investors = [
+  {
+    img: geometry,
+    name: "Geometry",
+    url: "https://www.geometry.xyz/",
   },
   {
     img: nascent,
@@ -22,24 +35,9 @@ const investors = [
     url: "https://www.nascent.xyz/",
   },
   {
-    img: geometry,
-    name: "Geometry",
-    url: "https://www.geometry.xyz/",
-  },
-  {
-    img: coinbase,
-    name: "Coinbase",
-    url: "https://www.coinbase.com/",
-  },
-  {
     img: maven11,
     name: "Maven11",
     url: "https://www.maven11.com/",
-  },
-  {
-    img: archetype,
-    name: "Archetype",
-    url: "https://www.archetype.fund/",
   },
   {
     img: lightspeed,
@@ -52,9 +50,9 @@ const investors = [
     url: "https://www.egirlcapital.com/",
   },
   {
-    img: folius,
-    name: "Folius",
-    url: "https://www.folius.ventures/",
+    img: archetype,
+    name: "Archetype",
+    url: "https://www.archetype.fund/",
   },
   {
     img: frc,
@@ -62,10 +60,15 @@ const investors = [
     url: "https://www.fourthrevolution.capital/",
   },
   {
+    img: folius,
+    name: "Folius",
+    url: "https://www.folius.ventures/",
+  },
+  {
     img: mark,
-    name: 'Mark Cuban Companies',
+    name: "Mark Cuban Companies",
     url: "https://markcubancompanies.com/",
-  }
+  },
 ];
 
 const angel = [
@@ -75,9 +78,19 @@ const angel = [
     url: "https://twitter.com/sandeepnailwal",
   },
   {
+    name: "Jaynti Kanani",
+    role: "Co-Founder, Polygon",
+    url: "https://twitter.com/_jdkanani",
+  },
+  {
     name: "Jinglan Wan",
     role: "Co-Founder, Optimism",
     url: "https://twitter.com/jinglejamOP",
+  },
+  {
+    name: "Robert Miller",
+    role: "Flashbots",
+    url: "https://twitter.com/bertcmiller",
   },
   {
     name: "David Hoffman",
@@ -89,29 +102,6 @@ const angel = [
     role: "Bankless",
     url: "https://twitter.com/RyanSAdams",
   },
-  {
-    name: "0xMaki",
-    role: "DeFi Legend",
-    url: "https://twitter.com/0xMaki",
-  },
-  {
-    name: "Robert Miller",
-    role: "Flashbots",
-    url: "https://twitter.com/bertcmiller",
-  },
-  {
-    name: "Jaynti Kanani",
-    role: "Co-Founder, Polygon",
-    url: "https://twitter.com/_jdkanani",
-  },
-  {
-    name: "Seb Audet",
-    role: "Co-Founder, Zapper.fi",
-    url: "https://twitter.com/sebaudet26"
-  },
-  {
-    name: "40+ kickass backers",
-  },
 ];
 
 export const Investors = () => {
@@ -119,10 +109,20 @@ export const Investors = () => {
     <div className="bg-white pt-14 pb-14">
       <div className="socket-container mx-auto">
         <h2 className="heading-2 text-center">Backed by the Best</h2>
-        {/* <p className="supportive-text text-center mt-1">
-          Our global investors include angel investors and leading funds
-        </p> */}
-        <div className="grid gap-x-[18px] gap-y-2 md:gap-y-6 justify-center mt-[3.75rem] grid-cols-2 md:grid-cols-3 lg:grid-cols-5 max-w-[1200px] mx-auto">
+        <div className="flex items-center justify-center mt-[3.75rem]">
+          {majorInvestors.map((item, index) => (
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={item.url}
+            >
+              <img src={item.img} className="h-[8rem]" />
+            </a>
+          ))}
+        </div>
+
+        <div className="grid gap-x-[18px] gap-y-2 md:gap-y-6 justify-center grid-cols-2 md:grid-cols-3 lg:grid-cols-5 max-w-[1200px] mx-auto">
           {investors.map((item, index) => (
             <InvestorLogo logo={item.img} url={item.url} key={index} />
           ))}

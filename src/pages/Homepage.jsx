@@ -10,9 +10,9 @@ export const Homepage = () => {
   return (
     <div>
       <Hero />
+      <Stats />
       <Partners />
       <ValueProp />
-      <Stats />
       <Investors />
       <Bungee />
       <PreFooter />

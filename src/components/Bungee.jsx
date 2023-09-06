@@ -1,5 +1,5 @@
 import { Button } from "./Button";
-import bungeeScreenshot from "../assets/bungee-screenshot.png";
+import bungeeScreenshot from "../assets/new-bungee-screenshot.png";
 
 export const Bungee = () => {
   return (
