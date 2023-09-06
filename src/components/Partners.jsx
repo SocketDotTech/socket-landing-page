@@ -2,28 +2,28 @@ import { useState } from "react";
 import thunder from "../assets/icons/thunder.svg";
 
 // gray icons
-import perpetualIcon from "../assets/partners/gray/perpetual.svg";
-import synthetixIcon from "../assets/partners/gray/Synthetix.svg";
-import premiaIcon from "../assets/partners/gray/Premia.svg";
-import dHedgeIcon from "../assets/partners/gray/dHedge.svg";
-import rubiconIcon from "../assets/partners/gray/Rubicon.svg";
-import polynomialIcon from "../assets/partners/gray/Polynomial.svg";
-import brahmaIcon from "../assets/partners/gray/brahma.svg";
-import TetuIcon from "../assets/partners/gray/Tetu.svg";
-import OnDefyIcon from "../assets/partners/gray/OnDefy.svg";
-import atlantisIcon from "../assets/partners/gray/atlantis.svg";
-import sequenceIcon from "../assets/partners/gray/Sequence.svg";
-import steakIcon from "../assets/partners/gray/steak.svg";
-import ZapperIcon from "../assets/partners/gray/Zapper.svg";
-import ZerionIcon from "../assets/partners/gray/Zerion.svg";
-import OneKeyIcon from "../assets/partners/gray/OneKey.svg";
-import imTokenIcon from "../assets/partners/gray/imToken.svg";
-import choiceIcon from "../assets/partners/gray/choise.svg";
-import viaIcon from "../assets/partners/gray/via.svg";
-import EtherspotIcon from "../assets/partners/gray/etherspot.svg";
-import PlasmaIcon from "../assets/partners/gray/plasma.svg";
-import orangeIcon from "../assets/partners/gray/orange.svg";
-import ambireIcon from "../assets/partners/gray/ambire.svg";
+// import perpetualIcon from "../assets/partners/gray/perpetual.svg";
+// import synthetixIcon from "../assets/partners/gray/Synthetix.svg";
+// import premiaIcon from "../assets/partners/gray/Premia.svg";
+// import dHedgeIcon from "../assets/partners/gray/dHedge.svg";
+// import rubiconIcon from "../assets/partners/gray/Rubicon.svg";
+// import polynomialIcon from "../assets/partners/gray/Polynomial.svg";
+// import brahmaIcon from "../assets/partners/gray/brahma.svg";
+// import TetuIcon from "../assets/partners/gray/Tetu.svg";
+// import OnDefyIcon from "../assets/partners/gray/OnDefy.svg";
+// import atlantisIcon from "../assets/partners/gray/atlantis.svg";
+// import sequenceIcon from "../assets/partners/gray/Sequence.svg";
+// import steakIcon from "../assets/partners/gray/steak.svg";
+// import ZapperIcon from "../assets/partners/gray/Zapper.svg";
+// import ZerionIcon from "../assets/partners/gray/Zerion.svg";
+// import OneKeyIcon from "../assets/partners/gray/OneKey.svg";
+// import imTokenIcon from "../assets/partners/gray/imToken.svg";
+// import choiceIcon from "../assets/partners/gray/choise.svg";
+// import viaIcon from "../assets/partners/gray/via.svg";
+// import EtherspotIcon from "../assets/partners/gray/etherspot.svg";
+// import PlasmaIcon from "../assets/partners/gray/plasma.svg";
+// import orangeIcon from "../assets/partners/gray/orange.svg";
+// import ambireIcon from "../assets/partners/gray/ambire.svg";
 
 // colored icons
 import perpetualIconFilled from "../assets/partners/colored/perpetual.svg";
@@ -48,118 +48,256 @@ import EtherspotIconFilled from "../assets/partners/colored/etherspot.svg";
 import PlasmaIconFilled from "../assets/partners/colored/plasma.svg";
 import orangeIconFilled from "../assets/partners/colored/orange.svg";
 import ambireIconFilled from "../assets/partners/colored/ambire.svg";
+import metamaskIconFilled from "../assets/partners/colored/metamask.svg";
+import coinbaseIconFilled from "../assets/partners/colored/coinbase.svg";
+import rainbowIconFilled from "../assets/partners/colored/rainbow.svg"
+import aevoIconFilled from "../assets/partners/colored/aevo.svg"
+import slingshotIconFilled from "../assets/partners/colored/slingshot.svg";
+import xdefiIconFilled from "../assets/partners/colored/xdefi.svg";
+import instadappIconFilled from "../assets/partners/colored/instadapp.svg";
+import gmxIconFilled from "../assets/partners/colored/gmx.svg";
+import lyraIconFilled from '../assets/partners/colored/lyra.svg';
+import kwentaIconFilled from "../assets/partners/colored/kwenta.svg"
+import bungeeIconFilled from "../assets/partners/colored/bungee.svg"
+import riskHarborIconFilled from "../assets/partners/colored/riskharbor.svg"
+import superformIconFilled from "../assets/partners/colored/superform.svg"
+import alignsideIconFilled from "../assets/partners/colored/alongside.svg"
+import jonesDaoIconFilled from "../assets/partners/colored/jones.svg"
+import goal3IconFilled from "../assets/partners/colored/goal3.svg"
+import omniIconFilled from "../assets/partners/colored/omni.svg"
+import zealIconFilled from "../assets/partners/colored/zeal.svg"
+import decentIconFilled from "../assets/partners/colored/decent.svg"
+import suberraIconFilled from "../assets/partners/colored/suberra.svg"
+import dxDaoIconFilled from "../assets/partners/colored/dxdao.svg"
+import levelIconFilled from "../assets/partners/colored/level.svg"
+import thalesIconFilled from "../assets/partners/colored/thales.svg"
 
 const partners = [
   {
+    name: "Coinbase Wallet",
+    icon: coinbaseIconFilled,
+    iconFilled: coinbaseIconFilled,
+  },
+  {
+    name: "Metamask",
+    icon: metamaskIconFilled,
+    iconFilled: metamaskIconFilled,
+  },
+  {
+    name: "Rainbow",
+    icon: rainbowIconFilled,
+    iconFilled: rainbowIconFilled,
+  },
+  {
     name: "Zapper",
-    icon: ZapperIcon,
+    icon: ZapperIconFilled,
     iconFilled: ZapperIconFilled,
   },
   {
     name: "Zerion",
-    icon: ZerionIcon,
+    icon: ZerionIconFilled,
     iconFilled: ZerionIconFilled,
   },
   {
-    name: "Synthetix",
-    icon: synthetixIcon,
-    iconFilled: synthetixIconFilled,
-  },
-  // lyra here
-  {
-    name: "Perpetual Protocol",
-    icon: perpetualIcon,
-    iconFilled: perpetualIconFilled,
+    name: "Aevo",
+    icon: aevoIconFilled,
+    iconFilled: aevoIconFilled,
   },
   {
     name: "OneKey",
-    icon: OneKeyIcon,
+    icon: OneKeyIconFilled,
     iconFilled: OneKeyIconFilled,
   },
   {
-    name: "Sequence",
-    icon: sequenceIcon,
-    iconFilled: sequenceIconFilled,
+    name: "Slingshot",
+    icon: slingshotIconFilled,
+    iconFilled: slingshotIconFilled,
   },
   {
-    name: "Premia",
-    icon: premiaIcon,
-    iconFilled: premiaIconFilled,
+    name: "XDEFI Wallet",
+    icon: xdefiIconFilled,
+    iconFilled: xdefiIconFilled,
   },
   {
-    name: "dHedge",
-    icon: dHedgeIcon,
-    iconFilled: dHedgeIconFilled,
+    name: "Instadapp",
+    icon: instadappIconFilled,
+    iconFilled: instadappIconFilled,
   },
   {
-    name: "Rubicon",
-    icon: rubiconIcon,
-    iconFilled: rubiconIconFilled,
+    name: "GMX",
+    icon: gmxIconFilled,
+    iconFilled: gmxIconFilled,
+  },
+  {
+    name: "Synthetix",
+    icon: synthetixIconFilled,
+    iconFilled: synthetixIconFilled,
+  },
+  {
+    name: "Lyra",
+    icon: lyraIconFilled,
+    iconFilled: lyraIconFilled,
+  },
+  {
+    name: "Kwenta",
+    icon: kwentaIconFilled,
+    iconFilled: kwentaIconFilled,
+  },
+  {
+    name: "Perpetual Protocol",
+    icon: perpetualIconFilled,
+    iconFilled: perpetualIconFilled,
+  },
+  {
+    name: "Bungee",
+    icon: bungeeIconFilled,
+    iconFilled: bungeeIconFilled,
+  },
+  {
+    name: "Risk Harbor",
+    icon: riskHarborIconFilled,
+    iconFilled: riskHarborIconFilled,
+  },
+  {
+    name: "Superform",
+    icon: superformIconFilled,
+    iconFilled: superformIconFilled,
   },
   {
     name: "Polynomial",
-    icon: polynomialIcon,
+    icon: polynomialIconFilled,
     iconFilled: polynomialIconFilled,
   },
   {
+    name: "dHedge",
+    icon: dHedgeIconFilled,
+    iconFilled: dHedgeIconFilled,
+  },
+  {
+    name: "Level Finance",
+    icon: levelIconFilled,
+    iconFilled: levelIconFilled,
+  },
+  {
+    name: "Premia",
+    icon: premiaIconFilled,
+    iconFilled: premiaIconFilled,
+  },
+  {
+    name: "Alongside",
+    icon: alignsideIconFilled,
+    iconFilled: alignsideIconFilled,
+  },
+  {
+    name: "JonesDAO",
+    icon: jonesDaoIconFilled,
+    iconFilled: jonesDaoIconFilled,
+  },
+  {
+    name: "Goal3",
+    icon: goal3IconFilled,
+    iconFilled: goal3IconFilled,
+  },
+  {
+    name: "Sequence",
+    icon: sequenceIconFilled,
+    iconFilled: sequenceIconFilled,
+  },
+  {
+    name: "Choice",
+    icon: choiceIconFilled,
+    iconFilled: choiceIconFilled,
+  },
+  {
+    name: "Ambire Wallet",
+    icon: ambireIconFilled,
+    iconFilled: ambireIconFilled,
+  },
+  {
+    name: "Omni",
+    icon: omniIconFilled,
+    iconFilled: omniIconFilled,
+  },
+  {
+    name: "Zeal",
+    icon: zealIconFilled,
+    iconFilled: zealIconFilled,
+  },
+  {
+    name: "Decent",
+    icon: decentIconFilled,
+    iconFilled: decentIconFilled,
+  },
+  {
+    name: "Suberra",
+    icon: suberraIconFilled,
+    iconFilled: suberraIconFilled,
+  },
+  {
+    name: "DxDAO",
+    icon: dxDaoIconFilled,
+    iconFilled: dxDaoIconFilled,
+  },
+  {
+    name: "Rubicon",
+    icon: rubiconIconFilled,
+    iconFilled: rubiconIconFilled,
+  },
+  {
     name: "Brahma.fi",
-    icon: brahmaIcon,
+    icon: brahmaIconFilled,
     iconFilled: brahmaIconFilled,
   },
   {
+    name: "Plasma Finance",
+    icon: PlasmaIconFilled,
+    iconFilled: PlasmaIconFilled,
+  },
+  {
+    name: "Thales",
+    icon: thalesIconFilled,
+    iconFilled: thalesIconFilled,
+  },
+  {
+    name: "Orange Wallet",
+    icon: orangeIconFilled,
+    iconFilled: orangeIconFilled,
+  },
+  {
+    name: "Etherspot",
+    icon: EtherspotIconFilled,
+    iconFilled: EtherspotIconFilled,
+  },
+  // not included in the design
+  {
     name: "Tetu",
-    icon: TetuIcon,
+    icon: TetuIconFilled,
     iconFilled: TetuIconFilled,
   },
   {
     name: "OnDefy",
-    icon: OnDefyIcon,
+    icon: OnDefyIconFilled,
     iconFilled: OnDefyIconFilled,
   },
   {
     name: "Atlantis Loan",
-    icon: atlantisIcon,
+    icon: atlantisIconFilled,
     iconFilled: atlantisIconFilled,
   },
   {
     name: "Steakwallet",
-    icon: steakIcon,
+    icon: steakIconFilled,
     iconFilled: steakIconFilled,
   },
   {
     name: "imToken",
-    icon: imTokenIcon,
+    icon: imTokenIconFilled,
     iconFilled: imTokenIconFilled,
   },
   {
-    name: "Choice",
-    icon: choiceIcon,
-    iconFilled: choiceIconFilled,
-  },
-  {
     name: "Via Exchange",
-    icon: viaIcon,
+    icon: viaIconFilled,
     iconFilled: viaIconFilled,
-  },
-  {
-    name: "Etherspot",
-    icon: EtherspotIcon,
-    iconFilled: EtherspotIconFilled,
-  },
-  {
-    name: "Plasma Finance",
-    icon: PlasmaIcon,
-    iconFilled: PlasmaIconFilled,
-  },
-  {
-    name: "Orange Wallet",
-    icon: orangeIcon,
-    iconFilled: orangeIconFilled,
-  },
-  {
-    name: "Ambire Wallet",
-    icon: ambireIcon,
-    iconFilled: ambireIconFilled,
   },
 ];
 
@@ -176,9 +314,9 @@ export const Partners = () => {
             {partners.map((item) => (
               <IconFilledTab
                 name={item.name}
-                icon={item.icon}
+                icon={item.iconFilled}
                 key={item.name}
-                iconFilled={item.iconFilled}
+                // iconFilled={item.iconFilled}
               />
             ))}
           </div>
@@ -190,7 +328,7 @@ export const Partners = () => {
   );
 };
 
-const IconFilledTab = ({ name, icon, iconFilled }) => {
+const IconFilledTab = ({ name, icon }) => {
   const [hover, setHover] = useState(false);
   return (
     <div
@@ -199,7 +337,7 @@ const IconFilledTab = ({ name, icon, iconFilled }) => {
       // onMouseOut={() => setHover(false)}
     >
       <div className="border border-black/[0.02] rounded-[6.5px] h-[2rem] w-[2rem] md:h-[2.375rem] md:w-[2.375rem] flex items-center justify-center">
-        <img src={hover ? iconFilled : icon} />
+        <img src={icon} />
       </div>
       <p className="text-socket-gray-80 font-extrabold text-sm md:text-base">{name}</p>
     </div>

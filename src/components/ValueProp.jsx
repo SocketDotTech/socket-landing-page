@@ -9,13 +9,13 @@ const valuePropData = [
     icon: gearIcon,
   },
   {
-    title: "True Composibility",
-    desc: "Connect different protocols on different layers together, compose with any protocol on any-chain, no limits",
+    title: "True Composability",
+    desc: "Seamlessly connect your app on different layers with our messaging stack. Go beyond by composing with any protocol on any-chain, no limits",
     icon: msgIcon,
   },
   {
     title: "Efficient Value Transfer",
-    desc: "Plug in to the biggest bridges and DEXs across chains and optimise for the parameters you care about, high outputs, low latency or trust minimisation",
+    desc: "Plug in to the limitless liquidity available across chains and optimise for the parameters you care about, high outputs, low latency or trust minimisation",
     icon: transferIcon,
   },
 ];
