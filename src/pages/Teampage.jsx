@@ -17,7 +17,7 @@ import vishnu from "../assets/team/vishnu.jpg";
 import murphy from "../assets/team/murphy.jpg";
 import ankita from "../assets/team/ankita.jpg";
 import lito from "../assets/team/lito.png";
-import aditya from "../assets/team/aditya.jpeg";
+import aditya from "../assets/team/aditya.png";
 import tayler from "../assets/team/tayler.png";
 import akash from "../assets/team/akash.png";
 
