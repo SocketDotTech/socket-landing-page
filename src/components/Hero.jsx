@@ -1,5 +1,5 @@
 import { Button } from "./Button";
-import heroFallback from "../assets/hero-fallback.svg";
+import heroFallback from "../assets/hero-img.svg";
 
 export const Hero = () => {
   return (
