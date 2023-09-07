@@ -20,6 +20,7 @@ import lito from "../assets/team/lito.png";
 import aditya from "../assets/team/aditya.png";
 import tayler from "../assets/team/tayler.png";
 import akash from "../assets/team/akash.png";
+import hatashi from "../assets/team/hatashi.png";
 
 const teamData = [
   {
@@ -63,6 +64,12 @@ const teamData = [
     designation: "Head of Strategy & Marketing",
     twitter: "sriramvas",
     imgUrl: sriram,
+  },
+  {
+    name: "Hatashi",
+    designation: "BD Partnerships",
+    twitter: "hatashiyamatomo",
+    imgUrl: hatashi,
   },
   {
     name: "Ankita Kumari",
