@@ -31,7 +31,7 @@ const teamData = [
   {
     name: "Rishabh Khurana",
     designation: "Co-founder",
-    twitter: "khuranarishabh0",
+    twitter: "khuranarishabh3",
     imgUrl: rk,
   },
   {
