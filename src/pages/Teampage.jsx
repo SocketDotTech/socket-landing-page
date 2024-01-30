@@ -4,13 +4,11 @@ import { Button } from "../components/Button";
 import vc from "../assets/team/vc.jpg";
 import rk from "../assets/team/rk.jpg";
 import arth from "../assets/team/arth.jpg";
-import varun from "../assets/team/varun.jpg";
 import vamsi from "../assets/team/vamsi.jpg";
-import aniket from "../assets/team/aniket.jpg";
-import salil from "../assets/team/salil.png";
+import aniket from "../assets/team/aniket-2.jpg";
+import salil from "../assets/team/salil-2.jpg";
 import shrey from "../assets/team/shrey.jpg";
-import ameesha from "../assets/team/ameesha.jpg";
-import dpb from "../assets/team/dpb.jpg";
+import ameesha from "../assets/team/ameesha-2.jpg";
 import sriram from "../assets/team/sriram.jpg";
 import apurva from "../assets/team/apurva.png";
 import vishnu from "../assets/team/vishnu.jpg";
@@ -20,7 +18,8 @@ import lito from "../assets/team/lito.png";
 import aditya from "../assets/team/aditya.png";
 import tayler from "../assets/team/tayler.png";
 import akash from "../assets/team/akash.png";
-import hatashi from "../assets/team/hatashi.png";
+import rbm from "../assets/team/rbm.jpg"
+
 
 const teamData = [
   {
@@ -42,12 +41,6 @@ const teamData = [
     imgUrl: arth,
   },
   {
-    name: "Varun Bhalla",
-    designation: "Product Manager",
-    twitter: null,
-    imgUrl: varun,
-  },
-  {
     name: "Murphy",
     designation: "Head of Design",
     twitter: null,
@@ -64,12 +57,6 @@ const teamData = [
     designation: "Head of Strategy & Marketing",
     twitter: "sriramvas",
     imgUrl: sriram,
-  },
-  {
-    name: "Hatashi",
-    designation: "BD Partnerships",
-    twitter: "hatashiyamatomo",
-    imgUrl: hatashi,
   },
   {
     name: "Ankita Kumari",
@@ -116,12 +103,6 @@ const teamData = [
     imgUrl: akash,
   },
   {
-    name: "Devain Pal Bansal",
-    designation: "Researcher / Information Architect",
-    twitter: "dpbmaverick98",
-    imgUrl: dpb,
-  },
-  {
     name: "Apurva Mishra",
     designation: "Marketing & Operations",
     imgUrl: apurva,
@@ -138,6 +119,11 @@ const teamData = [
     designation: "Team Hospitality Lead",
     imgUrl: tayler,
     twitter: "tayler_melvin",
+  },
+  {
+    name: "Rahul Mahabaleshwara",
+    designation: "Program manager",
+    imgUrl: rbm,
   },
 ];
 
