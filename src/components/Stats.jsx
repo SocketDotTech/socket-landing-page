@@ -8,13 +8,13 @@ export const Stats = () => {
         <div className="lg:px-[4.375rem] flex flex-col md:flex-row justify-evenly overlay-bg pt-10 md:pt-14 pb-12 mt-[1.375rem] lg:mx-[4.625rem] gap-10 md:gap-0">
           <div>
             <Stat>
-              <span className="text-socket-gray-40">$</span>3.5B+
+              <span className="text-socket-gray-40">$</span>9B+
             </Stat>
             <StatLabel>Volume Transferred</StatLabel>
           </div>
           <div>
             <Stat>
-              2.5<span className="text-socket-gray-40">M</span>+
+              7<span className="text-socket-gray-40">M</span>+
             </Stat>
             <StatLabel>Total Transactions</StatLabel>
           </div>
