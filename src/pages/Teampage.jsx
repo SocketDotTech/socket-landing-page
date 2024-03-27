@@ -119,12 +119,7 @@ const teamData = [
     designation: "Team Hospitality Lead",
     imgUrl: tayler,
     twitter: "tayler_melvin",
-  },
-  {
-    name: "Rahul Mahabaleshwara",
-    designation: "Program manager",
-    imgUrl: rbm,
-  },
+  }
 ];
 
 export const Teampage = () => {
